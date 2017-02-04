@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<title>Outdoor Adventure Crew</title>
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans|Permanent+Marker|Russo+One" rel="stylesheet">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="p:domain_verify" content="dc03348a48dcdcac6f423cfd69284065"/>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCuLNTDb1E1WRrKcLL5oQvXFHCQsDCBFg8",
+        authDomain: "outdooradventurecrew-a3400.firebaseapp.com",
+        databaseURL: "https://outdooradventurecrew-a3400.firebaseio.com",
+        storageBucket: "outdooradventurecrew-a3400.appspot.com",
+        messagingSenderId: "65257941341"
+    };
+    firebase.initializeApp(config);
+
+    // google analytics
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-91385267-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYo1Y-BGE_r201PlgjEfdTM6r3njal7MM"
+        type="text/javascript"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular-sanitize.js"></script>
+<script src="https://angular-ui.github.com/ui-router/release/angular-ui-router.js"></script>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<script src="../../js/home.js"></script>
+<script src="../../js/article_ctrl.js"></script>
+<script src="../../js/survival_article_ctrl.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="../../stylesheets/main.css">
+<link rel="stylesheet" href="../../stylesheets/advlog.css">
+<link rel="stylesheet" href="../../stylesheets/article.css">
+<link rel="stylesheet" href="../../stylesheets/overlay.css">
+<link rel="stylesheet" href="../../stylesheets/gallery.css">
+
+<body>
+<div id="fb-root"></div>
+
+
+<div ng-app="OutdoorAdvCrew" ng-controller="SurvivalArticleCtrl">
+
+    <header class="container-fluid" id="header">
+        <div class="row">
+            <nav class="col-sm-5 text-left header-title">
+                <a href="../../index.html">Outdoor Adventure Crew</a>
+            </nav>
+            <nav class="col-sm-7 text-right header-icons">
+                <a href="../../blog">Adventure Log</a><a href="../../gearrev">Reviews</a><a href="../../survival">Survival
+                Guide</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="jumbotron">
+        <div class="container" id="jumbo-title">
+            <div class="row">
+                <h3>{{article.jumbotronTitle}}</h3>
+                <h2>Date: {{article.date}}, Logged by: {{article.loggedBy}}</h2>
+            </div>
+        </div>
+    </section>
+    <div id="main">
+        <section class="container-fluid" id="main-container-blog">
+            <div class="row">
+
+                <div class="col-sm-8 main-blog">
+                    <div class="main-blog-body">
+                        <hr>
+                        <div class="row title-div-article text-center">Survival Guide: </div>
+                        <hr><br>
+                        <div class="article-content" dynamic="article.articleContent"></div>
+                        <!-- <div class="article-content" ng-bind-html="article.articleContent"></div> -->
+
+                        <!-- <div class="article-content">
+                          <p>As winter finally sets in here in Utah, many people put away their camping gear and call it a season, content to curl up by a fire with a book and reminisce about all the adventures they have had over the course of the year. Unfortunately, those who do this miss out on a whole side of the outdoor spectrum that Utah has to offer. Don’t believe me? Let the silence, all sound deadened by fresh snow, and the feel of snow crunching under your feet convince you. </p>
+                          <p>While an experience unlike perhaps anything else you’ve ever tried, winter hiking, snowshoeing and cross country skiing need to be approached with more caution than other adventures. Proper gear needs to be acquired and plans need to be made to ensure that as much risk is avoided as possible. </p>
+                          <p>To help with this, we have made a list of our top three favorite places here in Utah County to dip your toes into the (frozen) pond of winter adventure. </p>
+                          <div class="inner-article-title-bree">Big Springs Hollow Trail</div>
+                          <p>This park and accompanying trail provide an awesome place to explore for beginning snowshoers and cross country skiers. We really like this trail because it has a good variety of trails to explore and fields to romp around in and due to the amount of interconnected small trails in the area, it is fairly easy to go for a quick jaunt or a long hike. </p>
+                          <p><span>More Information:</span> <a href="http://provo-canyon-parks.weebly.com/big-springs.html">http://provo-canyon-parks.weebly.com/big-springs.html</a></p>
+                          <p><span>Directions:</span> <a href="https://goo.gl/maps/K3C4cfpvunt">https://goo.gl/maps/K3C4cfpvunt</a></p>
+                          <div class="inner-article-title-bree">American Fork Canyon</div>
+                          <p>A hiking, climbing, swimming, kayaking, and all around adventurer’s paradise during Spring, Summer, and Fall, American Fork Canyon turns into a winter-sports wonderland when the snow falls. The canyon is awesome because it offers a spectrum of trail difficulties and special snowshoe/ski areas. For beginners, the Forest Service converts Little Mill, and Granite Flat Campground into ski/snowshoe areas with miles of groomed trails. For more advanced explorers, the myriad of roads and trails offer adventures to your hearts delight. </p>
+                          <p>NOTE: American Fork Canyon is very avalanche prone, please check conditions and take the appropriate gear (warm clothes, beacon, probe etc). </p>
+                          <p><span>More Information:</span> <a href="http://www.fs.usda.gov/detail/uwcnf/passes-permits/recreation/?cid=STELPRDB5043532">http://www.fs.usda.gov/detail/uwcnf/passes-permits/recreation/?cid=STELPRDB5043532</a></p>
+                          <p><span>Directions:</span> <a href="https://goo.gl/maps/K3C4cfpvunt">https://goo.gl/maps/K3C4cfpvunt</a></p>
+                          <div class="inner-article-title-bree">Stewart Falls</div>
+                          <p>While this trail can be done with snowshoes or skis, this hike gets enough foot traffic that the snow is pretty reasonably packed and can be traversed without gear. The major perk of this hike is the huge frozen waterfall at the end. This frozen, multi-level monolith is truly a sight to behold. </p>
+                          <p><span>More Information:</span> <a href="https://utah.com/hiking/stewart-falls">https://utah.com/hiking/stewart-falls</a></p>
+                          <p><span>Directions:</span> <a href="https://goo.gl/maps/QtXrWL2o6Ur">https://goo.gl/maps/QtXrWL2o6Ur</a></p>
+                          <p>While these are a few of our favorites, there are a plethora of other options to explore within minutes of the valley, so go get your coat, pack some hot chocolate, and let us know how it goes! Don’t forget to let someone know of your plan, and when you’ll be back! </p>
+                          <br><div class="text-center"><iframe frameBorder="0" src="https://youtube.com/embed/Y25PJaX7Mm4"></iframe></div>
+                        </div> -->
+                        <br>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4">
+                    <div class="top-spacing"></div>
+
+                    <hr>
+                    <div class="text-center"><p class="sidebar-title-div-bree">Featured Articles</p></div>
+                    <hr>
+                    <div class="sidebar-featured">
+                        <div ng-repeat="article in featured">
+                            <div class="row">
+
+                                <div class="col-sm-2 sidebar-article-part1">
+                                    <a href="{{article.link}}" onclick="scrollToTop()"><img src="{{article.imageSrc}}"></a><br><br>
+                                </div>
+                                <div class="col-sm-2 sidebar-article-part2">
+                                    <a href="{{article.link}}" onclick="scrollToTop()"><p class="sidebar-article-title">{{article.title}}</p></a>
+                                    <p class="sidebar-article-date">{{article.date}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- <hr>
+                    <div class="text-center sidebar-title-div-small"><a href="#">[ADVERTISEMENT]</a></div> -->
+
+
+                    <hr>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="row">
+                <div class="col-sm-12" id="comment">
+                    <h3>COMMENTS</h3>
+                    <div class="fb-comments"
+                         dyn-fb-comment-box
+                         page-href="http://www.adamcthompson.com/oac/index.html#/survival_article?id={{id}}"
+                         data-numposts="5">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+
+<footer class="container-fluid">
+    <div class="row text-center" id="footerrow">
+
+        <div class="col-sm-4 text-left" id="fleftnav">
+            <!-- <a href="#/subscribe">Subscribe to our email list</a><br> -->
+            <a href="../../contact.html">Contact us</a><br>
+            <a href="../../promote.html">Promote with us</a><br>
+        </div>
+        <div class="col-sm-8 text-right" id="frightnav">
+            <a href="https://www.instagram.com/outdooradventurecrew/">FOLLOW US!</a>
+            <a href="https://www.instagram.com/outdooradventurecrew/"><img src="../../images/socialmedia/instagram.png"></a>
+            <a href="https://www.facebook.com/outdooradventurecrew"><img
+                    src="../../images/socialmedia/facebook.png"></a>
+            <a href="https://www.youtube.com/channel/UCrQJ1WjL2YMK7ksa8xsg03g"><img
+                    src="../../images/socialmedia/youtube.png"></a>
+            <a href="https://www.pinterest.com/adventurecrew10"><img src="../../images/socialmedia/pinterest.png"></a>
+        </div>
+    </div>
+    <hr>
+    <div class="col-sm-12 text-center" id="copyright">Copyright &copy 2016 | Outdoor Adventure Crew | this site
+        developed and maintained by Adam Thompson
+    </div>
+</footer>
+
+
+</body>
+</html>

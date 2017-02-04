@@ -1,0 +1,25 @@
+.gallery img {
+  width:300px;
+}
+
+.gallery col-sm-4 .gallery col-sm-2 {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  height: 1300px;
+}
+
+.gallery a, .gallery button {
+    cursor: pointer;
+    height: 300px;
+}
+
+.gallery a:hover {
+  background-color: #414141;
+}
+
+#image-view {
+  margin: 20px;
+}

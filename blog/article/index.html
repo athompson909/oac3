@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<title>Outdoor Adventure Crew</title>
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans|Permanent+Marker|Russo+One" rel="stylesheet">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="p:domain_verify" content="dc03348a48dcdcac6f423cfd69284065"/>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCuLNTDb1E1WRrKcLL5oQvXFHCQsDCBFg8",
+        authDomain: "outdooradventurecrew-a3400.firebaseapp.com",
+        databaseURL: "https://outdooradventurecrew-a3400.firebaseio.com",
+        storageBucket: "outdooradventurecrew-a3400.appspot.com",
+        messagingSenderId: "65257941341"
+    };
+    firebase.initializeApp(config);
+
+    // google analytics
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-91385267-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYo1Y-BGE_r201PlgjEfdTM6r3njal7MM"
+        type="text/javascript"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular-sanitize.js"></script>
+<script src="https://angular-ui.github.com/ui-router/release/angular-ui-router.js"></script>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<script src="../../js/home.js"></script>
+<script src="../../js/article_ctrl.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="../../stylesheets/main.css">
+<link rel="stylesheet" href="../../stylesheets/advlog.css">
+<link rel="stylesheet" href="../../stylesheets/article.css">
+<link rel="stylesheet" href="../../stylesheets/overlay.css">
+<link rel="stylesheet" href="../../stylesheets/gallery.css">
+
+<body>
+<div id="fb-root"></div>
+
+
+<div ng-app="OutdoorAdvCrew" ng-controller="ArticleCtrl">
+
+    <header class="container-fluid" id="header">
+        <div class="row">
+            <nav class="col-sm-5 text-left header-title">
+                <a href="../../index.html">Outdoor Adventure Crew</a>
+            </nav>
+            <nav class="col-sm-7 text-right header-icons">
+                <a href="../../blog">Adventure Log</a><a href="../../gearrev">Reviews</a><a href="../../survival">Survival
+                Guide</a>
+            </nav>
+        </div>
+    </header>
+    <section class="jumbotron">
+        <div class="container" id="jumbo-title">
+            <div class="row">
+                <h3>{{article.jumbotronTitle}}</h3>
+                <h2>Date: {{article.date}}, Logged by: {{article.loggedBy}}</h2>
+            </div>
+        </div>
+    </section>
+    <div id="main">
+        <section class="container-fluid" id="main-container-blog">
+            <div class="row">
+
+                <div class="col-sm-8 main-blog">
+                    <div class="main-blog-body">
+                        <!-- <div class="article-header">
+                          <p><span>Date: </span>9/17/2016</p>
+                          <p><span>Logged by: </span>Kimberly Jackson</p>
+                        </div> -->
+                        <hr>
+                        <div class="row title-div-article text-center">Quick Stats:</div>
+                        <hr>
+                        <br>
+                        <p><span>Days: </span>{{article.days}}</p>
+                        <p><span>Nights: </span>{{article.nights}}</p>
+                        <p><span>Where we stayed: </span>{{article.whereWeCamped}}</p>
+                        <p><span>Trails we hiked: </span>{{article.trailsWeHiked}}</p>
+                        <p><span>Miles hiked: </span>{{article.milesHiked}}</p>
+                        <p><span>Permits needed: </span>{{article.permitsNeeded}}</p>
+                        <p><span>Suggested time of year: </span>{{article.suggestedTimeOfYear}}</p>
+                        <p><span>Gear rating: </span>{{article.gearRating}}</p>
+                        <p><span>Difficulty: </span>{{article.difficulty}}</p>
+                        <p><span>Enjoyability: </span>{{article.enjoyability}}</p>
+                        <br>
+                        <hr>
+                        <div class="row title-div-article text-center">Log:</div>
+                        <hr>
+                        <br>
+                        <div class="article-content" dynamic="article.articleContent"></div>
+
+                        <!-- <div class="article-content">
+                          <p>Yellowstone made the perfect end to a great summer of adventures for our crew. Ethan had recently returned from his summer sales with thoughts of this trip getting him through the grueling summer. Needless to say, we were all really excited for this last hurrah before the school year started. We met on Wednesday afternoon and loaded up the cars, spending a little longer in Provo than we had anticipated before leaving. With 8 of us heading on the trip we had decided to take two cars. In hindsight one bigger car would have been much better both for logistics and fun. First key to a great experience on your Yellowstone trip: a great music playlist. As per usual we created a shared playlist and each added a couple of songs to it, making for a great car ride. We arrived late Wednesday night at the cabin about 30 min outside of the west entrance to the park. Tips and Things to know for Yellowstone: </p>
+                          <div class="inner-article-title-bree">1. There are no buffalo in Yellowstone. Only American Bison. </div>
+                          <p>Usually our trips are planned out from beginning to end. This trip, however, was played by ear, meaning we spent more time driving than we usually do. This is a great option for explorers who do not want to spend so much time hiking, and more time enjoying the beautiful scenery. The wildlife in Yellowstone is abundant (don't get too close!), and worth the trip, especially if you have kids travelling with you; thus, we, being basically small children at heart, enjoyed seeing BISON, moose, elk, bears, and other forms of fascinating creatures, both large and small. </p>
+                          <div class="inner-article-title-bree">2. Bring new friends. </div>
+                          <p>Our good friend Ming walked into the apartment as we planned the trip. Now, Ming is from China and has never left Utah (except for Los Angeles, which can hardly count as vacation...). He asked if he could come, and having an extra spot, we welcomed him into our crew. Yellowstone is a great place to bring new explorers as it has various levels of hikes that show America's heartland in all of its glory. </p>
+                          <div class="side-pic-portrait"><img src="{{article.images[0]}}"></div>
+                          <div class="inner-article-title-bree">3. Visit the Geothermal Features.</div>
+                          <p>Mud pots make up one of the different geothermal features in the Park, along with geysers, fumaroles (steam vents), and hot springs. Many of these are found on "board walk" trails throughout the Park, including the Grand Prismatic Spring, Artist's Paint Pots, and, of course, Old Faithful. These trails are short and can be crowded. Don't let that stop you, though (unless you do NOT like people--in that case, we ask you to stay FAR from the mud pots...). </p>
+                          <div class="inner-article-title-bree">4. Skipping up the steps of Uncle Tom's trail...not advised. </div>
+                          <p>Uncle Tom's trail is one of the many trails at the Grand Canyon of Yellowstone, leading to a great point to view the Falls. It is definitely straight out of Teddy Roosevelt's CCC (Civilian Conservation Corps) plan as a massive staircase takes explorers down the side of the cliff to the viewing point. Going back up is a hike in and of itself, even if you are using the stairs. Don't skip. Also, watch out for ferrets. They don't care how fast you went up the staircase--they will charge (Ethan is still going to therapy...jk). They actually are not a problem. Just a funny moment of a rather feisty ferret. They don't charge unless provoked. </p>
+                          <div class="side-pic-landscape"><img src="{{article.images[1]}}"></div>
+                          <div class="inner-article-title-bree">5. Point Sublime is not quite as sublime as the trail leading up to it.</div>
+                          <p>...however, it makes for a great place to let out your inner sloth due to the fence at the point that we weirdly started hanging from, using all four limbs. Nobody was around, so why not show off our true selves (see photos). Anyways, the 1.4 mile hike is one to remember, as it displays Yellowstone in its full glory. It's great for any group as the look out points along the way are just as great, or greater as Sublime Point, so if you feel it's time to turn around, you don't need to feel like you are missing a ton. But were we to go back, we'd probably go the whole way again. </p>
+                          <div class="inner-article-title-bree">6. Nonetheless the hike along the Grand Canyon of Yellowstone to Point Sublime is definitely worth it. </div>
+                          <p>Again, it is BE-A-U-TI-FUL, and definitely uncrowded!!! In general, there are many "off-the-beaten-path" trails to take, that do take you away from the heavy crowds. Talk to park rangers; they are glad to point out the more secluded hikes. </p>
+                          <div class="side-pic-portrait"><img src="{{article.images[2]}}"></div>
+                          <div class="inner-article-title-bree">7. You're never too old to be a junior ranger. </div>
+                          <p>There is a ton to learn in Yellowstone. What was great about this experience was how much we took in just by being at the Park. Earning our junior ranger badges together (as 20 to 26 year olds) was a highlight of our trip and a great bonding experience.  You may not be as weird and choose not to do so, but do find opportunities to learn about this almost seemingly unreal place while you are there. </p>
+                          <div class="inner-article-title-bree">8. Be cautious of electronics while hiking near waterfalls... </div>
+                          <p>...because sometimes you get your phone wet and it, well, dies. Mystic falls, not too far from the Grand Prismatic Spring, are near the end of a lovely, easy hike. The falls are beautiful but Brayden dropped his phone. What a goober. The hike connects to a four to seven mile hike up the mountain (there are multiple trails to the top). From the end of that hike, you can see half of all the geysers in the world. Pretty rad. [center pic 4]</p>
+                          <div class="center-pic landscape"><img src="{{article.images[3]}}"></div>
+                          <div class="side-pic-portrait"><img src="{{article.images[4]}}"></div>
+                          <div class="inner-article-title-bree">9. Christmas music in August is sometimes appropriate, especially in a cabin. </div>
+                          <p>Okay. Listen. We know some people have this whole "don't listen to Christmas music before Thanksgiving" rule, but when Ming turns on Frank Sinatra's Christmas album as you have a cozy fire going on in your rustic cabin, it makes for a pretty comfy experience. [side pic 5] But in all seriousness, do make sure you and your fellow explorers are comfortable, whether you are in tents or in cabins. Yellowstone is an "all-ages welcome" experience and it is built that way. It is meant to accommodate for all levels of explorer. </p>
+                          <div class="inner-article-title-bree">10. "me gusta carne de lengua" y "me gusta LA lengua" no son lo mismo ;) </div>
+                          <p>As Katherine learned on a school bus taco truck. Sorry if you don't speak Spanish. Frankly, you probably don't want to know. You can use Google Translate, and then use your imagination. Just remember, "lengua" also means tongue.... But let's talk about meals for a second. For any adventure, pre-plan your meals to accommodate your lodging situation. Don't forget snacks for trails and non-perishable foods for longer hikes. We had a ton of fun cooking together, partially due to the fact that we had easy enough meals, many of which could use similar ingredients (ex: scrambled eggs for breakfast one day and hash browns for breakfast the next). That way, you don't have to get too complicated in sorting out ingredients. Yellowstone Village is also home to many great places to eat.</p>
+                          <p>Yellowstone was definitely one for the books. Sure, not everything was perfect (we literally left the park at 10 PM, getting home around 4 AM), and it may not have been as strenuous as the Narrows or Havasupai, but it was a great way to end a summer in preparation for a rough school year. Happy exploring!</p>
+                        </div> -->
+                        <br>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4">
+                    <div class="top-spacing"></div>
+
+                    <hr>
+                    <div class="text-center"><p class="sidebar-title-div-bree">Featured Articles</p></div>
+                    <hr>
+                    <div class="sidebar-featured">
+                        <div ng-repeat="article in featured">
+                            <div class="row">
+
+                                <div class="col-sm-2 sidebar-article-part1">
+                                    <a ng-href={{article.link}}><img ng-src={{article.imageSrc}}></a><br><br>
+                                </div>
+                                <div class="col-sm-2 sidebar-article-part2">
+                                    <a href="{{article.link}}"><p class="sidebar-article-title">{{article.title}}</p>
+                                    </a>
+                                    <p class="sidebar-article-date">{{article.date}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <hr>
+                    <div class="text-center sidebar-title-div-small"><a href="#">[ADVERTISEMENT]</a></div> -->
+
+
+                    <hr>
+                    <!-- <p class="sidebar-title-bree">Where We Camped</p> -->
+                    <app-map style="height:375px;" center="loc"></app-map>
+
+                    <br><br><br>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="row">
+                <div class="col-sm-12" id="comment">
+                    <h3>COMMENTS</h3>
+                    <!-- <div class="fb-comments" data-href="http://www.adamcthompson.com/oac/index.html#/article?id=0" data-numposts="5"></div> -->
+                    <!-- <div class="fb-comments" data-href="http://www.outdooradventurecrew.com" data-width="600px" data-numposts="5"></div> -->
+                    <!-- <div id="fb-comment-box" dyn-fb-comment-box
+                            page-href="http://www.adamcthompson.com/oac/index.html#/article?id={{id}}";
+                            numposts="5"
+                            colorscheme="light">
+                    </div> -->
+                    <div class="fb-comments"
+                         dyn-fb-comment-box
+                         page-href="http://www.outdooradventurecrew.com/blog/article/index.html?id={{id}}"
+                         data-numposts="5">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- to right here -->
+
+    </div>
+</div>
+
+
+<footer class="container-fluid">
+    <div class="row text-center" id="footerrow">
+
+        <div class="col-sm-4 text-left" id="fleftnav">
+            <!-- <a href="#/subscribe">Subscribe to our email list</a><br> -->
+            <a href="../../contact.html">Contact us</a><br>
+            <a href="../../promote.html">Promote with us</a><br>
+        </div>
+        <div class="col-sm-8 text-right" id="frightnav">
+            <a href="https://www.instagram.com/outdooradventurecrew/">FOLLOW US!</a>
+            <a href="https://www.instagram.com/outdooradventurecrew/"><img src="../../images/socialmedia/instagram.png"></a>
+            <a href="https://www.facebook.com/outdooradventurecrew"><img
+                    src="../../images/socialmedia/facebook.png"></a>
+            <a href="https://www.youtube.com/channel/UCrQJ1WjL2YMK7ksa8xsg03g"><img
+                    src="../../images/socialmedia/youtube.png"></a>
+            <a href="https://www.pinterest.com/adventurecrew10"><img src="../../images/socialmedia/pinterest.png"></a>
+        </div>
+    </div>
+    <hr>
+    <div class="col-sm-12 text-center" id="copyright">Copyright &copy 2016 | Outdoor Adventure Crew | this site
+        developed and maintained by Adam Thompson
+    </div>
+</footer>
+
+
+</body>
+</html>

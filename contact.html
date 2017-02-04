@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<title>Outdoor Adventure Crew</title>
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans|Permanent+Marker|Russo+One" rel="stylesheet">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="p:domain_verify" content="dc03348a48dcdcac6f423cfd69284065"/>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCuLNTDb1E1WRrKcLL5oQvXFHCQsDCBFg8",
+        authDomain: "outdooradventurecrew-a3400.firebaseapp.com",
+        databaseURL: "https://outdooradventurecrew-a3400.firebaseio.com",
+        storageBucket: "outdooradventurecrew-a3400.appspot.com",
+        messagingSenderId: "65257941341"
+    };
+    firebase.initializeApp(config);
+
+    // google analytics
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-91385267-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYo1Y-BGE_r201PlgjEfdTM6r3njal7MM"
+        type="text/javascript"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular-sanitize.js"></script>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<script src="js/home.js"></script>
+<script src="js/contact_ctrl.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="stylesheets/main.css">
+<link rel="stylesheet" href="stylesheets/advlog.css">
+<link rel="stylesheet" href="stylesheets/article.css">
+<link rel="stylesheet" href="stylesheets/overlay.css">
+<link rel="stylesheet" href="stylesheets/gallery.css">
+
+<body>
+
+<div ng-app="OutdoorAdvCrew" ng-controller="ContactCtrl">
+    <header class="container-fluid" id="header">
+        <div class="row">
+            <nav class="col-sm-5 text-left header-title">
+                <a ng-href="index.html">Outdoor Adventure Crew</a>
+            </nav>
+            <nav class="col-sm-7 text-right header-icons">
+                <a href="blog">Adventure Log</a><a href="gearrev">Reviews</a><a href="survival">Survival Guide</a>
+            </nav>
+        </div>
+    </header>
+    <section class="jumbotron" id="jumbo-contact">
+        <div class="container" id="jumbo-title-contact">
+            <div class="row">
+                <h4>Contact us</h4>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container" id="contact-container">
+        <div id="contact-us-bg">
+            <div class="row" id="contact-us" style="font-size: 42px">
+                <div class="col-sm-12 text-left">
+                    <hr>
+                    <p class="p-bree">We want to hear from you! Tell us about you, a recent adventure you’ve gone on, or
+                        one you would like to go on in the future, your dreams, your hopes, anything really! Shoot us an
+                        email!</p>
+                    <a class="p-opensans-big" style="margin-left:20px" href="mailto:outdooradventurecrew@gmail.com">outdooradventurecrew@gmail.com</a>
+                    <!-- <br> -->
+                    <p class="p-bree" style="margin-left:80px">-The Crew</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+
+
+<footer class="container-fluid">
+    <div class="row text-center" id="footerrow">
+
+        <div class="col-sm-4 text-left" id="fleftnav">
+            <!-- <a href="#/subscribe">Subscribe to our email list</a><br> -->
+            <a href="contact.html">Contact us</a><br>
+            <a href="promote.html">Promote with us</a><br>
+        </div>
+        <div class="col-sm-8 text-right" id="frightnav">
+            <a href="https://www.instagram.com/outdooradventurecrew/">FOLLOW US!</a>
+            <a href="https://www.instagram.com/outdooradventurecrew/"><img
+                    src="images/socialmedia/instagram.png"></a><a
+                href="https://www.facebook.com/outdooradventurecrew"><img src="images/socialmedia/facebook.png"></a><a
+                href="https://www.youtube.com/channel/UCrQJ1WjL2YMK7ksa8xsg03g"><img
+                src="images/socialmedia/youtube.png"></a><a href="https://www.pinterest.com/adventurecrew10"><img
+                src="images/socialmedia/pinterest.png"></a>
+        </div>
+    </div>
+    <hr>
+    <div class="col-sm-12 text-center" id="copyright">Copyright &copy 2016 | Outdoor Adventure Crew | this site
+        developed and maintained by Adam Thompson
+    </div>
+</footer>
+
+</div>
+
+
+</body>
+</html>

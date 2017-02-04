@@ -1,0 +1,451 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  color: #100900;
+  background-color: #f6f7f6;
+}
+
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  line-height: 42px;
+  font-size: 20px;
+  background-color: rgba(16,9,0,.8);
+  font-family: 'Open Sans', sans-serif;
+  z-index: 2;
+}
+
+.header-title {
+  font-family: 'Bree Serif', serif;
+  font-size: 28px;
+}
+
+.header-title a, .header-title a:hover, .header-title a:visited, .header-title a:link {
+  padding: 15px 12px 15px 12px;
+  color: #a9b0ac;
+  /*color: #293b30;*/
+}
+
+.header-title a:hover {
+    text-shadow: 0 0 .05em #a9b0ac;
+    transition: text-shadow 0.3s linear;
+}
+
+header nav {
+  padding: 0;
+}
+
+.header-icons a, .header-icons a:hover, .header-icons a:visited, .header-icons a:link {
+  /*vertical-align: middle;*/
+  padding: 8px 12px 8px 12px;
+  color: #a9b0ac;
+}
+
+.header-icons a:hover {
+  background-color: #272119;
+  height: 100%;
+  transition: background-color 0.3s linear;
+}
+
+.jumbotron {
+  margin: 0;
+  padding: 72px 0 0 0;
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 0px 0px 6px #100900;
+  font-style: italic;
+  font-weight: bold;
+  box-shadow: 0 2px 8px -2px #3b3a35;
+  background: url('https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/Jumbotron.jpg?alt=media&token=509956ab-9875-46a0-b454-bbd3d18e7843') no-repeat top center;
+  background-size: cover;
+  height: 510px;
+}
+
+#jumbo-top {
+  /*height: 650px;*/
+  height: 46em;
+}
+
+#jumbo-bottom {
+  height: 400px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#jumbo-contact {
+  height: 660px;
+}
+
+#jumbo-title, #jumbo-title-contact {
+  /*display: none;*/
+  color: #f6f7f6;
+  background-color: rgba(0,0,0,.4);
+  width: 100%;
+  padding-left: 60px;
+}
+
+#jumbo-title {
+  margin-top: 210px;
+}
+
+#jumbo-top #jumbo-title {
+  margin-top: 420px;
+}
+
+#jumbo-title-contact {
+    margin-top: 360px;
+}
+
+.jumbotron h3 {
+  font-size: 72px;
+}
+
+.jumbotron h4 {
+  font-size: 86px;
+}
+
+#main {
+  font-weight: bold;
+  height: auto;
+  min-height: 750px;
+  margin: 0;
+  padding: 0;
+}
+
+/*** THIS IS FOR HOME ***/
+
+/* change this width to affect the whole thing*/
+#main-container {
+  width: 100%;
+  /*margin: 0 auto;*/
+  margin-bottom: -100px;
+  padding: 0;
+}
+
+#contact-container {
+  width: 100%;
+  min-height: 400px;
+  padding: 0;
+}
+
+.image-row {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.rtest .col-sm-4 {
+  padding: 14px;
+}
+
+.rtest .col-sm-4 img {
+  width: 100%;
+  box-shadow: 0px 0px 4px #3b3a35;
+  transition: all .6s ease;
+  -webkit-transition: all .6s ease;
+}
+
+.rtest .col-sm-4 a:hover img {
+  filter: brightness(75%);
+  transition: all .6s ease;
+  -webkit-transition: all .6s ease;
+}
+
+/*#main-container img:hover {
+  filter: brightness(75%);
+  transition: all .6s ease;
+  -webkit-transition: all .6s ease;
+}*/
+
+#main-container img:
+
+#main-container a, #main-container a:visited, #main-container a:link, {
+  color: #100900;
+  text-decoration: none;
+}
+
+#main-container a h3 {
+    line-height: 26px;
+    /*color: #100900;*/
+    color: #f6f7f6;
+    background-color: rgba(0,0,0,.4);
+    text-decoration: none;
+    position: relative;
+    top: -120px;
+    padding: 12px 6px;
+}
+
+#main-container a:hover {
+  color: #20457c;
+  transition: color 1s ease;
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+}
+
+#main-container a h3:hover {
+  /*color: #20457c;*/
+  /*transition: color 1s ease;*/
+}
+
+.move-up {
+  position: relative;
+  top: -60px;
+}
+
+.r2 p {
+  font-size: 16px;
+  font-style: italic;
+}
+
+
+
+.p-opensans {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.p-opensans-italic {
+  font-size: 22px;
+  font-style: italic;
+}
+
+.p-opensans-big {
+  font-size: 21px;
+}
+
+.p-bree, #contact-us span {
+  font-family: 'Bree Serif', serif;
+  font-size: 24px;
+}
+
+#main-container hr, #contact-container hr {
+  border-color: #100900
+}
+
+#contact-container {
+  margin: 60px 0;
+}
+
+#about-us-bg, #contact-us-bg {
+  width: 100%;
+  /*background-color: #ccc;*/
+}
+
+#contact-us-bg {
+  margin: 0 0 100px 0;
+}
+
+#about-us, #contact-us {
+  margin: 0 auto;
+  width: 75%;
+  padding: 12px 30px;
+  background-color: #ccc;
+  color: rgba(16,9,0);
+  box-shadow: 0px 0px 16px #ccc;
+}
+
+.title-div-big {
+
+  vertical-align: middle;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 54px;
+  color: rgba(16,9,0);
+}
+
+/*.title-div-big .col-sm-12 {
+  padding: 0;
+}*/
+
+.title-div {
+  vertical-align: middle;
+  font-family: 'Permanent Marker', cursive;
+  /*text-shadow: 0px 0px 6px #100900;*/
+  color: #3b3a35;
+  font-size: 36px;
+}
+
+.title-div-pm {
+  vertical-align: middle;
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 0px 0px 14px #100900;
+  font-size: 30px;
+}
+
+.main-line {
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 200, from(#20457c), to(#fff));
+  /*background-color: #20457c;*/
+  height: 2px;
+  margin: 12px;
+}
+
+.main-line-r2 {
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 200, from(#20457c), to(#e1e1e1));
+  /*background-color: #20457c;*/
+  height: 2px;
+  margin: 12px;
+
+}
+
+.title-bree {
+  font-family: 'Bree Serif', serif;
+  font-size: 28px;
+}
+
+
+/*** *** ***/
+/*** GALLERY ***/
+.gallery-row {
+  margin-top: 32px;
+}
+
+
+
+
+/*** *** ***/
+
+footer {
+  box-shadow: 0 -2px 4px -2px #f6f7f6;
+  background-color: #100900;
+  line-height: 28px;
+  font-family: 'Bree Serif', serif;
+}
+
+#footerrow {
+  vertical-align: middle;
+  font-weight: bolder;
+  font-size: 24px;
+  margin: 32px 0 18px 0;
+  padding: 0;
+  width: 100%;
+}
+
+#frightnav img {
+  width: 36px;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 1px;
+  position: relative;
+  bottom: 0;
+}
+
+#frightnav img:hover {
+  /*bottom: 4px;*/
+  -webkit-animation-name: slideupward; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: .3s; /* Safari 4.0 - 8.0 */
+  animation-name: slideupward;
+  animation-duration: .3s;
+  bottom: 4px;
+}
+
+/* when coming off */
+#frightnav img:not( :hover ) {
+  -webkit-animation-name: slidedownward; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: .3s; /* Safari 4.0 - 8.0 */
+  animation-name: slidedownward;
+  animation-duration: .3s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes slideupward {
+    0% {bottom: 0px;}
+    100% {bottom: 4px;}
+}
+
+/* Standard syntax */
+@keyframes slideupward {
+    0% {bottom: 0px;}
+    100% {bottom: 4px;}
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes slidedownward {
+    0% {bottom: 4px;}
+    100% {bottom: 0px;}
+}
+
+/* Standard syntax */
+@keyframes slidedownward {
+    0% {bottom: 4px;}
+    100% {bottom: 0px;}
+}
+
+
+footer {
+  box-shadow: 0px 0px 4px #3b3a35;
+  color: #a9b0ac;
+}
+
+footer a, footer a:hover, footer a:visited, footer a:link {
+  color: #a9b0ac;
+}
+
+footer a:hover {
+  color: #20457c;
+  transition: color 0.5s ease;
+  /*text-decoration: underline;*/
+  /*border-bottom: 3px solid #20457c;*/
+}
+
+footer hr {}
+
+#fleftnav {
+  font-size: 30px;
+  /*font-weight: 900;*/
+  line-height: 32px;
+}
+
+#frightnav a {
+  margin: 0 2px 0 2px;
+  padding: 0;
+  /*font-family: 'Permanent Marker', cursive;*/
+  font-size: 40px;
+}
+
+.line {
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 650, from(#5e3448), to(#e1e1e1));
+  /*background-color: #5e3448;*/
+  height: 2px;
+  box-shadow: 0 2px 4px -2px #3b3a35;
+
+}
+
+.line-white {
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 650, from(#5e3448), to(#ffffff));
+  /*background-color: #5e3448;*/
+  height: 2px;
+  box-shadow: 0 2px 4px -2px #3b3a35;
+
+}
+
+.line-small {
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 525, from(#5e3448), to(#e1e1e1));
+  /*background-color: #5e3448;*/
+  height: 2px;
+  box-shadow: 0 2px 4px -2px #3b3a35;
+
+}
+
+
+#copyright {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 12px 12px 12px;
+  color: #3b3a35;
+}

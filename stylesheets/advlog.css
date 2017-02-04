@@ -1,0 +1,157 @@
+.top-spacing {
+  height: 60px;
+}
+
+#main-container-blog .container {
+  margin: 0;
+  padding: 0;
+}
+
+#main-container-blog .row {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#main-container-blog a, #main-container-blog a:visited, #main-container-blog a:link {
+  color: #100900;
+}
+
+#main-container-blog a:hover {
+  color: #20457c;
+  transition: color 1s ease;
+}
+
+#main-container-blog hr {
+  border-color: #3b3a35
+}
+
+.sidebar-article-title {
+  font-family: 'Bree Serif', serif;
+  font-size: 20px;
+  /*line-height: 22px;*/
+}
+
+.sidebar-article-part1  {
+  width: 40%;
+}
+
+.sidebar-article-part2 {
+  width: 50%;
+  margin: 12px;
+  padding: 12px;
+}
+
+.sidebar-article-part2 p {
+  line-height: 20px;
+  padding: 0;
+}
+
+.sidebar-article-date {
+  font-style: italic;
+  color: #100900;
+  font-size: 16px;
+}
+
+.sidebar-featured .col-sm-2 {
+  margin: 0 0 0 12px;
+  padding: 0;
+
+}
+
+.sidebar-featured img {
+  width: 100%;
+  /*margin-right: 12px;*/
+  box-shadow: 0px 0px 4px #3b3a35;
+  transition: all .6s ease;
+  -webkit-transition: all .6s ease;
+  margin: 0;
+  padding: 0;
+
+}
+
+.sidebar-featured img:hover {
+  filter: brightness(75%);
+  transition: all .6s ease;
+  -webkit-transition: all .6s ease;
+}
+
+
+.article-date {
+  font-family: 'Bree Serif', serif;
+  font-size: 22px;
+  line-height: 20px;
+  color: #3b3a35;
+}
+
+.smaller-line-height {
+  line-height: 28px;
+}
+
+.main-blog {
+  padding-left: 100px;
+  margin-bottom: 120px;
+}
+
+.main-blog img {
+  width: 90%;
+  /*margin-right: 12px;*/
+  box-shadow: 0px 0px 4px #3b3a35;
+  transition: all .6s ease;
+  -webkit-transition: all .6s ease;
+}
+
+.main-blog img:hover {
+  filter: brightness(75%);
+  transition: all .6s ease;
+  -webkit-transition: all .6s ease;
+}
+
+
+.main-blog-body {
+  padding: 40px;
+  margin-top: 40px;
+  background-color: #e1e1e1;
+}
+
+.sidebar-title-div-big {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 42px;
+}
+
+.sidebar-title-div {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 28px;
+}
+
+.sidebar-border {
+  /*border: 2px solid #20457c;*/
+  /*box-shadow: 0px 0px 12px #3b3a35;*/
+  background-color: #e1e1e1;
+  margin: 20px 60px 0 60px;
+}
+
+
+#month a:hover {
+  width: 100%;
+  background-color: #e1e1e1;
+}
+
+.sidebar-title-div-small {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 24px;
+}
+
+.sidebar-title-div-bree {
+    font-family: 'Bree Serif', serif;
+    font-size: 30px;
+}
+
+
+.sidebar-content-blog {
+  /*min-height: 500px;*/
+  /*background-color: #e1e1e1;*/
+  padding: 0;
+  margin: 0;
+  /*background: linear-gradient(to bottom, #e1e1e1, #ffffff);*/
+}
