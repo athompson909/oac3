@@ -35,8 +35,8 @@ header {
 }
 
 .header-title {
-  font-family: 'Bree Serif', serif;
-  font-size: 28px;
+    font-size:26px;
+    font-family: 'Bree Serif', serif;
 }
 
 .header-title a, .header-title a:hover, .header-title a:visited, .header-title a:link {
@@ -67,13 +67,15 @@ header nav {
 }
 
 .jumbotron {
+    position: relative;
+    top:40px;
   margin: 0;
   padding: 72px 0 0 0;
   font-family: 'Permanent Marker', cursive;
   text-shadow: 0px 0px 6px #100900;
   font-style: italic;
   font-weight: bold;
-  box-shadow: 0 2px 8px -2px #3b3a35;
+  /*box-shadow: 0 2px 8px -2px #3b3a35;*/
   background: url('https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/Jumbotron.jpg?alt=media&token=509956ab-9875-46a0-b454-bbd3d18e7843') no-repeat top center;
   background-size: cover;
   height: 510px;
@@ -81,7 +83,7 @@ header nav {
 
 #jumbo-top {
   /*height: 650px;*/
-  height: 46em;
+  height: 50em;
 }
 
 #jumbo-bottom {
@@ -152,12 +154,12 @@ header nav {
 }
 
 .rtest .col-sm-4 {
-  padding: 14px;
+  padding: 12px;
 }
 
 .rtest .col-sm-4 img {
   width: 100%;
-  box-shadow: 0px 0px 4px #3b3a35;
+  /*box-shadow: 0px 0px 4px #3b3a35;*/
   transition: all .6s ease;
   -webkit-transition: all .6s ease;
 }
@@ -254,11 +256,11 @@ header nav {
 
 #about-us, #contact-us {
   margin: 0 auto;
-  width: 75%;
+  width: 85%;
   padding: 12px 30px;
-  background-color: #ccc;
-  color: rgba(16,9,0);
-  box-shadow: 0px 0px 16px #ccc;
+  background-color: #eee;
+  color: rgba(16,9,0,1);
+  /*box-shadow: 0px 0px 16px #ccc;*/
 }
 
 .title-div-big {
@@ -283,7 +285,8 @@ header nav {
 
 .title-div-pm {
   vertical-align: middle;
-  font-family: 'Permanent Marker', cursive;
+  /*font-family: 'Permanent Marker', cursive;*/
+font-family: 'Bree Serif', serif;
   text-shadow: 0px 0px 14px #100900;
   font-size: 30px;
 }
@@ -321,7 +324,7 @@ header nav {
 /*** *** ***/
 
 footer {
-  box-shadow: 0 -2px 4px -2px #f6f7f6;
+  /*box-shadow: 0 -2px 4px -2px #f6f7f6;*/
   background-color: #100900;
   line-height: 28px;
   font-family: 'Bree Serif', serif;
@@ -389,7 +392,7 @@ footer {
 
 
 footer {
-  box-shadow: 0px 0px 4px #3b3a35;
+  /*box-shadow: 0px 0px 4px #3b3a35;*/
   color: #a9b0ac;
 }
 
@@ -407,7 +410,7 @@ footer a:hover {
 footer hr {}
 
 #fleftnav {
-  font-size: 30px;
+  font-size: 32px;
   /*font-weight: 900;*/
   line-height: 32px;
 }
@@ -416,14 +419,14 @@ footer hr {}
   margin: 0 2px 0 2px;
   padding: 0;
   /*font-family: 'Permanent Marker', cursive;*/
-  font-size: 40px;
+  font-size: 32px;
 }
 
 .line {
   background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 650, from(#5e3448), to(#e1e1e1));
   /*background-color: #5e3448;*/
   height: 2px;
-  box-shadow: 0 2px 4px -2px #3b3a35;
+  /*box-shadow: 0 2px 4px -2px #3b3a35;*/
 
 }
 
@@ -431,7 +434,7 @@ footer hr {}
   background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 650, from(#5e3448), to(#ffffff));
   /*background-color: #5e3448;*/
   height: 2px;
-  box-shadow: 0 2px 4px -2px #3b3a35;
+  /*box-shadow: 0 2px 4px -2px #3b3a35;*/
 
 }
 
@@ -439,7 +442,7 @@ footer hr {}
   background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 525, from(#5e3448), to(#e1e1e1));
   /*background-color: #5e3448;*/
   height: 2px;
-  box-shadow: 0 2px 4px -2px #3b3a35;
+  /*box-shadow: 0 2px 4px -2px #3b3a35;*/
 
 }
 

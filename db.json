@@ -1,0 +1,230 @@
+{
+  "articles": [
+    {
+      "title": "Rappelling Through Yankee Doodle Canyon",
+      "jumbotronTitle": "Yankee Doodle Canyon",
+      "jumbotronImageUrl": "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/yankeedoodle%2FJumbo.jpg?alt=media&token=1a7b69e5-35bf-4d5d-8cc0-3799dfbcfe7b",
+      "date": "9/17/2016",
+      "loggedBy": "Kimberly Jackson",
+      "intro": "It all started late one night, near a middle-of-nowhere town called Leeds, UT. The sleepy town was well past its own bedtime. That didn’t stop a meet up of the best adventure crew around...",
+      "images": [
+        "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/yankeedoodle%2Fpic%201.jpg?alt=media&token=d969687c-bc99-4d9b-b738-01a725b374c6",
+        "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/yankeedoodle%2Fpic%202.jpg?alt=media&token=8a27d55c-48a6-4d1c-a31c-5975aedfd02c",
+        "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/yankeedoodle%2Fpic%203.jpg?alt=media&token=7272ced8-5ac7-40c0-b3f2-80db19f28965",
+        "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/yankeedoodle%2Fpic%204.jpg?alt=media&token=f0e13cd8-4973-4509-af1b-3752c20814d1"
+      ],
+      "days": "2",
+      "nights": "1",
+      "whereWeCamped": "37° 14.215 N 113° 27.233 W (There is primitive, disbursed camping along this entire road)",
+      "mapsPosition": {
+        "lat": 37.236917,
+        "lng": -113.453889
+      },
+      "trailsWeHiked": "Yankee Doodle Canyon",
+      "milesHiked": "1-2",
+      "permitsNeeded": "No",
+      "suggestedTimeOfYear": "Perhaps a little earlier fall/late summer. We were in a canyon, so always shaded. Camping was a tad cold in September",
+      "gearRating": "9/10 (Basic technical gear required)",
+      "difficulty": "8/10 (Beginning technical skills required)",
+      "enjoyability": "7/10",
+      "articleContent": "<hr>  <div class='row title-div-article text-center'>Quick Stats:</div>  <hr>  <br>  <p><span>Days: </span>{{article.days}}</p>  <p><span>Nights: </span>{{article.nights}}</p>  <p><span>Where we stayed: </span>{{article.whereWeCamped}}</p>  <p><span>Trails we hiked: </span>{{article.trailsWeHiked}}</p>  <p><span>Miles hiked: </span>{{article.milesHiked}}</p>  <p><span>Permits needed: </span>{{article.permitsNeeded}}</p>  <p><span>Suggested time of year: </span>{{article.suggestedTimeOfYear}}</p>  <p><span>Gear rating: </span>{{article.gearRating}}</p>  <p><span>Difficulty: </span>{{article.difficulty}}</p>  <p><span>Enjoyability: </span>{{article.enjoyability}}</p>  <br>  <hr>  <div class='row title-div-article text-center'>Log:</div>  <hr>  <br><div class='side-pic-landscape'><img src='{{article.images[0]}}'></div><p>It all started late one night, near a middle-of-nowhere town called Leeds, UT. The sleepy town was well past its own bedtime. That didn’t stop a meet up of the best adventure crew around. Despite conventional wisdom and biological clocks, the Provo crew pulled onto Silver Reef Road shortly after midnight. Rachel, Adam, Ethan, Michael, and Brayden found Kimberly parked under a streetlight. They paused a moment to admire the new paint job on her car (A lovely beach and ocean scene that is fun, if somewhat ghetto). The two cars formed a caravan and set off to find the campsite. </p><p>After several U-turn situations (ok, maybe only like 2), the group found the right road and eventually the right campsite. Tarps were laid. Sleeping spots claimed. Adam opted to sleep in the backseat of one of the cars, despite implications this proved he had a delicate composition. Kimberly and Rachel slept on the fun tarp. Michael, Brayden, and Ethan on the mediocre-at-best tarp. Everyone settled in and passed out around 2 AM. It was a surprisingly cold night for being Southern Utah, but everyone survived.</p><p>In the morning, the group was briefly awakened by a lovely dog wandering through camp. Kimberly was the first up, under the assumption there is no better way to awake in the morning than via friendly dog. Adam was up next. Rachel, being insane and a total triathlon animal, got up and went for a run. Uphill. Both ways. Michael, Ethan, and Brayden finally finished morning cuddles and got up. Breakfast was bring your own, so various muffins, oatmeal, etc. were pulled out. Michael didn’t have water (cause that’s not important for hiking) and was going to attempt Gatorade oatmeal. Kimberly saved his butt with some extra water. Rachel returned and everyone piled into the cars for some more dirt-road-in-barely-road-worthy-sedans adventuring.</p><div class='side-pic-portrait'><img src='{{article.images[1]}}'></div><p>After another round of U-turn goodness, the trailhead was discovered. Everyone geared up and set out. The main repel into the canyon was in use by a rather large group, they pointed out a side way in so the crew wouldn’t have to wait. A little climbing and the first drop was underway. Pausing only to take some sick picks, everyone was down in no time. The other group was having some difficulty, as one of their repellers was uncomfortable with the drop and needed some coaxing. The crew stayed on hand for a minute in case there was anything they could do to help. Deciding there wasn’t much they could contribute, they moved on down the canyon.</p><p>The canyon had a nice handful of places to clip into the rock to repel. Honestly not all of them necessarily required gear to traverse, but adventurers take all the fun they can get. Some areas the less gear the better, in fact. The group happened upon several sections of puddle and mud filled canyon. Ethan made short work of these sections opting for a sideways, barefoot wall walk. Eventually the surprisingly deep pools of water and mud were unavoidable and everyone had to get dirty. One area in particular was something of a sinkhole. Getting down was tricky, but getting out took a hand from someone above to help pull up. Unless you’re Brayden. Who was the first out and managed to do a crazy Spiderman run jump out of the pit to pull Kimberly up after. This area definitely took the longest to get through, but was fun and rewarding. Plus it had little tiny frogs, so that’s fun. It was also decided that a new line of paint colors based on the faint olive brown mud ought to be released. So, keep an eye out in stores for that.</p><div class='center-pic landscape'><img src='{{article.images[2]}}'></div><p>The last bit of the hike out of the canyon was quite sheer. Rachel spearheaded an effort to find an easier way out, and found a scenic dead end. Ethan and Adam were the first to brave the actual way out. It was pretty slick, but not impossible and the crew made it out safely. Everyone trooped back to the cars in their climbing gear, looking like total action heroes. Another day saved by outdoor adventure.</p><div class='center-pic landscape'><img src='{{article.images[3]}}'></div>"
+    },
+    {
+      "title": "Yellowstone National Park",
+      "jumbotronTitle": "Yellowstone",
+      "jumbotronImageUrl": "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/Yellowstone%2Fjumbotron.jpg?alt=media&token=199e3f5a-197d-49a1-82f9-0c32a988e255",
+      "date": "8/24-8/27/2016",
+      "loggedBy": "Kathrine and Brayden",
+      "intro": "insert intro",
+      "images": [
+        "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/Yellowstone%2Fpic%201.jpg?alt=media&token=f55fde68-bf05-4b21-8561-ec63215858d5",
+        "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/Yellowstone%2Fpic%202.jpg?alt=media&token=d97471aa-e502-4c80-ae9e-d7ddbd61e110",
+        "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/Yellowstone%2Fpic%203.jpg?alt=media&token=77881efb-a952-4696-908d-664df7ac2e0c",
+        "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/Yellowstone%2Fpic%204.jpg?alt=media&token=178918f1-a1b7-4fb8-b562-b5aa0c90503d",
+        "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/Yellowstone%2Fpic%205.jpg?alt=media&token=421eff26-5ba3-435f-bf81-2f99f2607f87"
+      ],
+      "days": "2",
+      "nights": "1",
+      "whereWeCamped": "Cabin in Island Park, Idaho",
+      "mapsPosition": {
+        "lat": 44.428,
+        "lng": -110.5885
+      },
+      "trailsWeHiked": "Mystic Falls Grand Canyon of Yellowstone, Uncle Tom's Trail, Picturesque Point, Grand Prismatic Springs, Paint Pots",
+      "milesHiked": "Around 15",
+      "permitsNeeded": "No",
+      "suggestedTimeOfYear": "Year Round (Snowmobile needed in winter)",
+      "gearRating": "2/10 The Basics",
+      "difficulty": "3/10 Super Accessible",
+      "enjoyability": "7/10 Great time all around",
+      "articleContent": "<hr>  <div class='row title-div-article text-center'>Quick Stats:</div>  <hr>  <br>  <p><span>Days: </span>{{article.days}}</p>  <p><span>Nights: </span>{{article.nights}}</p>  <p><span>Where we stayed: </span>{{article.whereWeCamped}}</p>  <p><span>Trails we hiked: </span>{{article.trailsWeHiked}}</p>  <p><span>Miles hiked: </span>{{article.milesHiked}}</p>  <p><span>Permits needed: </span>{{article.permitsNeeded}}</p>  <p><span>Suggested time of year: </span>{{article.suggestedTimeOfYear}}</p>  <p><span>Gear rating: </span>{{article.gearRating}}</p>  <p><span>Difficulty: </span>{{article.difficulty}}</p>  <p><span>Enjoyability: </span>{{article.enjoyability}}</p>  <br>  <hr>  <div class='row title-div-article text-center'>Log:</div>  <hr>  <br><p>Yellowstone made the perfect end to a great summer of adventures for our crew. Ethan had recently returned from his summer sales with thoughts of this trip getting him through the grueling summer. Needless to say, we were all really excited for this last hurrah before the school year started. We met on Wednesday afternoon and loaded up the cars, spending a little longer in Provo than we had anticipated before leaving. With 8 of us heading on the trip we had decided to take two cars. In hindsight one bigger car would have been much better both for logistics and fun. First key to a great experience on your Yellowstone trip: a great music playlist. As per usual we created a shared playlist and each added a couple of songs to it, making for a great car ride. We arrived late Wednesday night at the cabin about 30 min outside of the west entrance to the park. Tips and Things to know for Yellowstone: </p><div class='inner-article-title-bree'>1. There are no buffalo in Yellowstone. Only American Bison. </div><p>Usually our trips are planned out from beginning to end. This trip, however, was played by ear, meaning we spent more time driving than we usually do. This is a great option for explorers who do not want to spend so much time hiking, and more time enjoying the beautiful scenery. The wildlife in Yellowstone is abundant (don't get too close!), and worth the trip, especially if you have kids travelling with you; thus, we, being basically small children at heart, enjoyed seeing BISON, moose, elk, bears, and other forms of fascinating creatures, both large and small. </p><div class='inner-article-title-bree'>2. Bring new friends. </div><p>Our good friend Ming walked into the apartment as we planned the trip. Now, Ming is from China and has never left Utah (except for Los Angeles, which can hardly count as vacation...). He asked if he could come, and having an extra spot, we welcomed him into our crew. Yellowstone is a great place to bring new explorers as it has various levels of hikes that show America's heartland in all of its glory. </p><div class='side-pic-portrait'><img src='{{article.images[0]}}'></div><div class='inner-article-title-bree'>3. Visit the Geothermal Features.</div><p>Mud pots make up one of the different geothermal features in the Park, along with geysers, fumaroles (steam vents), and hot springs. Many of these are found on 'board walk' trails throughout the Park, including the Grand Prismatic Spring, Artist's Paint Pots, and, of course, Old Faithful. These trails are short and can be crowded. Don't let that stop you, though (unless you do NOT like people--in that case, we ask you to stay FAR from the mud pots...). </p><div class='inner-article-title-bree'>4. Skipping up the steps of Uncle Tom's trail...not advised. </div><p>Uncle Tom's trail is one of the many trails at the Grand Canyon of Yellowstone, leading to a great point to view the Falls. It is definitely straight out of Teddy Roosevelt's CCC (Civilian Conservation Corps) plan as a massive staircase takes explorers down the side of the cliff to the viewing point. Going back up is a hike in and of itself, even if you are using the stairs. Don't skip. Also, watch out for ferrets. They don't care how fast you went up the staircase--they will charge (Ethan is still going to therapy...jk). They actually are not a problem. Just a funny moment of a rather feisty ferret. They don't charge unless provoked. </p><div class='side-pic-landscape'><img src='{{article.images[1]}}'></div><div class='inner-article-title-bree'>5. Point Sublime is not quite as sublime as the trail leading up to it.</div><p>...however, it makes for a great place to let out your inner sloth due to the fence at the point that we weirdly started hanging from, using all four limbs. Nobody was around, so why not show off our true selves (see photos). Anyways, the 1.4 mile hike is one to remember, as it displays Yellowstone in its full glory. It's great for any group as the look out points along the way are just as great, or greater as Sublime Point, so if you feel it's time to turn around, you don't need to feel like you are missing a ton. But were we to go back, we'd probably go the whole way again. </p><div class='inner-article-title-bree'>6. Nonetheless the hike along the Grand Canyon of Yellowstone to Point Sublime is definitely worth it. </div><p>Again, it is BE-A-U-TI-FUL, and definitely uncrowded!!! In general, there are many 'off-the-beaten-path' trails to take, that do take you away from the heavy crowds. Talk to park rangers; they are glad to point out the more secluded hikes. </p><div class='side-pic-portrait'><img src='{{article.images[2]}}'></div><div class='inner-article-title-bree'>7. You're never too old to be a junior ranger. </div><p>There is a ton to learn in Yellowstone. What was great about this experience was how much we took in just by being at the Park. Earning our junior ranger badges together (as 20 to 26 year olds) was a highlight of our trip and a great bonding experience.  You may not be as weird and choose not to do so, but do find opportunities to learn about this almost seemingly unreal place while you are there. </p><div class='inner-article-title-bree'>8. Be cautious of electronics while hiking near waterfalls... </div><p>...because sometimes you get your phone wet and it, well, dies. Mystic falls, not too far from the Grand Prismatic Spring, are near the end of a lovely, easy hike. The falls are beautiful but Brayden dropped his phone. What a goober. The hike connects to a four to seven mile hike up the mountain (there are multiple trails to the top). From the end of that hike, you can see half of all the geysers in the world. Pretty rad. </p><div class='center-pic landscape'><img src='{{article.images[3]}}'></div><div class='side-pic-portrait'><img src='{{article.images[4]}}'></div><div class='inner-article-title-bree'>9. Christmas music in August is sometimes appropriate, especially in a cabin. </div><p>Okay. Listen. We know some people have this whole 'don't listen to Christmas music before Thanksgiving' rule, but when Ming turns on Frank Sinatra's Christmas album as you have a cozy fire going on in your rustic cabin, it makes for a pretty comfy experience.  But in all seriousness, do make sure you and your fellow explorers are comfortable, whether you are in tents or in cabins. Yellowstone is an 'all-ages welcome' experience and it is built that way. It is meant to accommodate for all levels of explorer. </p><div class='inner-article-title-bree'>10. 'me gusta carne de lengua' y 'me gusta LA lengua' no son lo mismo ;) </div><p>As Katherine learned on a school bus taco truck. Sorry if you don't speak Spanish. Frankly, you probably don't want to know. You can use Google Translate, and then use your imagination. Just remember, 'lengua' also means tongue.... But let's talk about meals for a second. For any adventure, pre-plan your meals to accommodate your lodging situation. Don't forget snacks for trails and non-perishable foods for longer hikes. We had a ton of fun cooking together, partially due to the fact that we had easy enough meals, many of which could use similar ingredients (ex: scrambled eggs for breakfast one day and hash browns for breakfast the next). That way, you don't have to get too complicated in sorting out ingredients. Yellowstone Village is also home to many great places to eat.</p><p>Yellowstone was definitely one for the books. Sure, not everything was perfect (we literally left the park at 10 PM, getting home around 4 AM), and it may not have been as strenuous as the Narrows or Havasupai, but it was a great way to end a summer in preparation for a rough school year. Happy exploring!</p>"
+    },
+    {
+      "title": "Traveling Down",
+      "jumbotronTitle": "Traveling Down",
+      "jumbotronImageUrl": "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/grandcanyon%2Fjumbo.jpg?alt=media&token=3eb0162e-334d-473f-98a4-9e7b6b56142d",
+      "date": "11/18-11/20/2016",
+      "loggedBy": "Ashley Raymond and Kale",
+      "intro": "insert intro",
+      "images": [
+        "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/grandcanyon%2Fpic%202%20(2).jpg?alt=media&token=537c13b3-350a-40e5-bff3-baad5a27c360",
+        "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/grandcanyon%2Fpic%201.jpg?alt=media&token=05907414-5c3f-47de-b206-7bb9c215b4f7",
+        "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/grandcanyon%2Fpic%204.jpg?alt=media&token=052da675-01c9-486a-a43a-1312eb1e0430",
+        "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/grandcanyon%2Fpic%209.jpg?alt=media&token=b50c20fb-dcdb-45b0-b7c2-89a4e1ef8634",
+        "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/grandcanyon%2Fpic%205.jpg?alt=media&token=43242e0d-fe72-4762-be5f-d27539ab629a",
+        "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/grandcanyon%2Fpic%206.jpg?alt=media&token=2c3c60e7-b3ed-421e-a147-09d729c48f17",
+        "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/grandcanyon%2Fpic%207.jpg?alt=media&token=49f05c24-fbde-414c-9cc2-efa4af0b974d",
+        "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/grandcanyon%2Fpic%208.jpg?alt=media&token=bcaf20a2-5421-4082-bd89-73f1523d2e02"
+      ],
+      "days": "2",
+      "nights": "1",
+      "whereWeCamped": "Grand Canyon Mather Campground",
+      "mapsPosition": {
+        "lat": 36.0558466,
+        "lng": -112.1399301
+      },
+      "trailsWeHiked": "",
+      "milesHiked": "",
+      "permitsNeeded": "No",
+      "suggestedTimeOfYear": "",
+      "gearRating": "",
+      "difficulty": "",
+      "enjoyability": "",
+      "articleContent": "<hr>  <div class='row title-div-article text-center'>Log:</div>  <hr>  <div class='article-content'>      <p>Kale, Caleb and I did a celebratory dance when we somehow managed to be the only car to have four people for our long journey. Michael insisted someone else would have to ride with us, but little did he know we would forget a few people along the way. Okay we didn't really leave anyone along the way, but we did have a miscommunication and we all left Provo without picking up Baerett. We get a text from Baerett about 20 minutes into our journey asking if anyone was coming for him. After making a couple calls it was confirmed that we had indeed left our good pal behind (with a group of 17 it was inevitable).</p>      <div class='side-pic-portrait'><img src='{{article.images[0]}}'></div>      <p>While we loaded up more gear in Spanish Fork someone drove back and picked Baerett up, crisis averted. We made our way down to Arizona and took a couple of pit  stops [Side Pic 1] to eat Mexican food, and take pictures by signs that say 'Home of the Ho-Made Pies'. The most legendary pit stop was in Paige Arizona at Walmart, where we stumbled upon some awesome footie pajamas. Michael, Matt, Kale, Caleb, and Skyler took it upon themselves to parade around wearing women's footie pajamas while Davis, Garrett and I documented everything and had some good laughs.</p>      <div class='center-pic landscape'><img src='{{article.images[1]}}'></div>      <p>When we started getting closer to our campsite we saw some massive bull elks, if you were to ask half asleep Kale he would tell you they were big deer, Tomato To-mah-to right? Our campsite was sweet, there were trees everywhere and it was an ideal place to put up a hammock. It was fun to see everyone work together as we set up camp at 3 in the morning. All of us shuffled around half asleep trying to be quiet so we didn’t wake up our neighbors. It was freezing, turns out it isn’t always summer in Arizona like I thought. We looked like little eskimos as we piled on all of our gear to keep warm. With 3 big tents and 3 people in hammocks we got a couple hours of sleep before we set off on our epic adventure hiking the Grand Canyon.</p>      <div class='inner-article-title-bree'>The Hike</div>      <p>We hiked at the South Rim on the Bright Angel Trail it was a beautiful hike! I am so glad we hiked at the end of November so it wasn’t blazing hot. That would have been unbearable. It was awesome that it was cold in the morning and at night, but during the day it was nice and warm and we even broke a sweat. Back in Utah it was snowing the whole weekend so it was awesome to have one last little warm getaway.</p>      <p>We all got to know each other even better as we hiked and chatted, it was sweet on the way down because it was all downhill. It was easy to walk and talk and have fun. When we got down into the bottom we realized we might not have time to make it all the way to the river and back out before dark so we thought about going to Plateau Point instead of all the way down to the river. The guys and Kimberly couldn’t part with the idea of going all the way to the river so they decided to forge ahead while Brayden, Katherine, Lia and I went to Plateau Point a shorter, alternative, yet still beautiful destination, so we could make it back before dark and have dinner ready.</p>      <div class='inner-article-title-bree'>Plateau Point</div>      <p>Platea Point was awesome! We were so glad we chose to do that one instead. We still hiked 12.5 miles that day and I don’t know about you but I thought that was a sufficient distance. On our way back up we got passed by Matt, Ethan and Justin. They were basically running the whole thing and got back way before us. Lia and I got our second wind after we saw them and we tried to keep up, but they were so fast. We sure felt that uphill, the last few hours and miles were killer. Our legs wanted to give up, but we rode it out and made it back before dark.</p>      <p>We saw so many cool plants and animals. Well I guess the animals were the usual ones, squirrels, and deer but none the less the squirrels were giant ones and I enjoyed chasing them and trying to get pictures. We had such a great day hiking and although it was difficult at times it was a beautiful hike and so worth the long drive and the many miles.</p>      <div class='center-pic landscape'><img src='{{article.images[2]}}'></div>      <div class='inner-article-title-bree'>River Group</div>      <p>For those of us who continued on to the river, we embraced a sweet challenge. A ranger who was returning from her trip down mentioned it would be near impossible to make it to the river and back before dark and that it may prove to be too dangerous. Not knowing of our supreme athleticism (haha) , she assumed we would be simply strolling down to the river. Instead, we embraced the challenge and began trotting down the trail at a light jog. Soon we were shedding jackets and rolling up our sleeves as the temperatures grew warmer and our bodies started working harder. (EDITOR’S NOTE: We never advocate nor recommend disregarding the advice of any park ranger, we only proceeded after assessing our preparedness to finish the hike in the dark). </p>      <!--<div class='side-pic-portrait'><img src='{{article.images[3]}}'></div>-->      <p>Before we knew it we were walking through deep ocean-like sand. We looked up to steep cliff walls and rushing water. We had made it to the river in record time. The water was beautiful and regardless of the chilly november breeze, we rolled up our pants and dipped our toes in the nice Grand Canyon River water. We snapped pics, ate trail snacks, and enjoyed a few minutes with our toes in the sand. The river was quite rewarding and the descent downward was definitely worth it. How could this little river be the creator and carver of such a majestic canyon? After our quick rest we grabbed our stuff, said goodbye to the bottom of Grand Canyon and began our trot back up the mountain side.</p>      <p>In a mixture of hiking, jogging, and speed walking, we found ourselves all the way back up to the top of the canyon. It was a challenge hiking out, but surrounded by good friends, dorky games, fun stories, and disney songs by Michael, we were able to hustle out of the canyon as the sun was dipping beneath the desert of Arizona.</p>      <div class='center-pic landscape'><img src='{{article.images[4]}}'></div>      <div class='inner-article-title-bree'>The Aftermath</div>      <div class='side-pic-portrait'><img src='{{article.images[5]}}'></div>      <p>We ate some good food while we were camping, I was so impressed with the meals our friends planned and prepared. We had omelets and oatmeal in a bag, like who thinks of that? Genius! My favorite meal was the Dutch oven pizza, yeah you heard me, pizza while camping, and it was as delicious as it sounds! [Side pic 6 ish] We all sat around the fire eating pizza, and banana boats while telling stories, it was the perfect night after a long day of hiking. A shout out to Adam and Kale for helping me to my tent that night when I fell asleep in my camp chair by the fire. Apparently I was half asleep and saying some weird things, I can’t remember much about that night, but I still get teased. (No Alcohol was consumed, just severe fatigue)  </p>      <p>Sunday was awesome as we stopped at some of the lookout points and saw some great views of the Grand Canyon, boy was it a beaut! We also stopped at Horseshoe Bend on our way home. 'Horrrsssshoooeee... we're going to Horrrsssseeeshhooooe!!', yeah that's what Davis would say as he did a goofy penguin waddle, that became our inside joke. Whenever we saw each other the rest of the way home we would say that to each other and waddle a little. It got me so jacked to see Horseshoe Bend, Adam and I literally ran down the trail so we could get there faster. Boy was it worth it! That view was breathtaking! Speaking of our breath being taken away, lets talk about when Michael dropped his car keys while standing right by the edge of a cliff at Horseshoe. Everyone within 20 feet gasped as we watched his keys slide a little on the rock, luckily they didn't fall! We then all laughed and pointed, poor embarrassed Michael. The keys were then turned over to Ethan for safe keeping so that we could make it home without having to hotwire the car</p>      <div class='center-pic landscape'><img src='{{article.images[6]}}'></div>      <p>We took a little detour so we could get a better view of Lake Powell. That is something I loved about this trip was that we took time to stop and enjoy the view, we took everything as it came and were super flexible. Even when we had a little car trouble, everyone stayed chill, the boys fixed it, and we went on our way. It was a stress free weekend off the grid and I find myself every day since saying, “take me back to Arizona!”.</p>      <div class='center-pic landscape'><img src='{{article.images[7]}}'></div>  </div>"
+    }
+  ],
+  "survivalArticles": [
+    {
+      "title": "3 Utah County Adventures you NEED to try this winter",
+      "jumbotronTitle": "Utah County Winter Activites",
+      "jumbotronImageUrl": "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/winteractivitiessurvguide%2Fwinter%20jumbo.jpg?alt=media&token=2882606f-2e97-45d3-a84e-ce0e62adcce6",
+      "date": "12/16/2016",
+      "loggedBy": "Michael Nixon",
+      "intro": "It all started late one night, near a middle-of-nowhere town called Leeds, UT. The sleepy town was well past its own bedtime. That didn’t stop a meet up of the best adventure crew around...",
+      "images": [],
+      "articleContent": "<p>As winter finally sets in here in Utah, many people put away their camping gear and call it a season, content to curl up by a fire with a book and reminisce about all the adventures they have had over the course of the year. Unfortunately, those who do this miss out on a whole side of the outdoor spectrum that Utah has to offer. Don’t believe me? Let the silence, all sound deadened by fresh snow, and the feel of snow crunching under your feet convince you. </p><p>While an experience unlike perhaps anything else you’ve ever tried, winter hiking, snowshoeing and cross country skiing need to be approached with more caution than other adventures. Proper gear needs to be acquired and plans need to be made to ensure that as much risk is avoided as possible. </p><p>To help with this, we have made a list of our top three favorite places here in Utah County to dip your toes into the (frozen) pond of winter adventure. </p><div class='inner-article-title-bree'>Big Springs Hollow Trail</div><p>This park and accompanying trail provide an awesome place to explore for beginning snowshoers and cross country skiers. We really like this trail because it has a good variety of trails to explore and fields to romp around in and due to the amount of interconnected small trails in the area, it is fairly easy to go for a quick jaunt or a long hike. </p><p><span>More Information:</span> <a href='http://provo-canyon-parks.weebly.com/big-springs.html'>http://provo-canyon-parks.weebly.com/big-springs.html</a></p><p><span>Directions:</span> <a href='https://goo.gl/maps/K3C4cfpvunt'>https://goo.gl/maps/K3C4cfpvunt</a></p><div class='inner-article-title-bree'>American Fork Canyon</div><p>A hiking, climbing, swimming, kayaking, and all around adventurer’s paradise during Spring, Summer, and Fall, American Fork Canyon turns into a winter-sports wonderland when the snow falls. The canyon is awesome because it offers a spectrum of trail difficulties and special snowshoe/ski areas. For beginners, the Forest Service converts Little Mill, and Granite Flat Campground into ski/snowshoe areas with miles of groomed trails. For more advanced explorers, the myriad of roads and trails offer adventures to your hearts delight. </p><p>NOTE: American Fork Canyon is very avalanche prone, please check conditions and take the appropriate gear (warm clothes, beacon, probe etc). </p><p><span>More Information:</span> <a href='http://www.fs.usda.gov/detail/uwcnf/passes-permits/recreation/?cid=STELPRDB5043532'>http://www.fs.usda.gov/detail/uwcnf/passes-permits/recreation/?cid=STELPRDB5043532</a></p><p><span>Directions:</span> <a href='https://goo.gl/maps/K3C4cfpvunt'>https://goo.gl/maps/K3C4cfpvunt</a></p><div class='inner-article-title-bree'>Stewart Falls</div><p>While this trail can be done with snowshoes or skis, this hike gets enough foot traffic that the snow is pretty reasonably packed and can be traversed without gear. The major perk of this hike is the huge frozen waterfall at the end. This frozen, multi-level monolith is truly a sight to behold. </p><p><span>More Information:</span> <a href='https://utah.com/hiking/stewart-falls'>https://utah.com/hiking/stewart-falls</a></p><p><span>Directions:</span> <a href='https://goo.gl/maps/QtXrWL2o6Ur'>https://goo.gl/maps/QtXrWL2o6Ur</a></p><p>While these are a few of our favorites, there are a plethora of other options to explore within minutes of the valley, so go get your coat, pack some hot chocolate, and let us know how it goes! Don’t forget to let someone know of your plan, and when you’ll be back! </p><br><div class='text-center'><iframe frameBorder='0' src='https://youtube.com/embed/Y25PJaX7Mm4'></iframe></div>"
+    }
+  ],
+  "gearReviews": [
+    {
+      "title": "Alpine Liesure Co. Gear Review",
+      "jumbotronTitle": "Alpine Liesure Co.",
+      "jumbotronImageUrl": "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/alpineliesureco%2Falpine%20jumbo%20(1).jpg?alt=media&token=e766eaaf-1876-4247-8619-c82ad73be3e5",
+      "date": "12/20/2016",
+      "loggedBy": "Michael Nixon",
+      "intro": "Lauren Suissi is a US Veteran, she commercially started making hammocks in August out of her home and now uses almost all of her free time making quality hammocks for customers.",
+      "images": [
+        "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/alpineliesureco%2Fpic%201.jpg?alt=media&token=d19b171a-2372-43dd-9da3-23bd93641d19",
+        "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/alpineliesureco%2Fpic%202.jpg?alt=media&token=65d3f898-6cf1-493c-b7f3-ab73130f1624"
+      ],
+      "articleContent": "<p>Lauren Suissi a US Veteran started Alpine Leisure Co after ordering a hammock online and having it fail to meet her expectations. She commercially started making hammocks in August out of her home and now uses almost all of her free time making quality hammocks for customers.</p><p>One thing that Lauren is especially proud of, and feels differentiates her from her competitors is the fact that all of her hammocks, straps, etc are made entirely in the USA. The fabric is produced in North Carolina, the Hammock is sewn in North Carolina, and it ships from...you guessed it, North Carolina. </p><div class='inner-article-title-bree'>What We Liked</div><p>We LOVED the material that Outdoor Leisure Co’s hammocks are made out of. Rather than being made out of your typical nylon parachute fabric, OLC’s hammocks are made out of a ripstop Nylon that is lighter, more durable, and (in our opinion) softer. </p><p>While somewhat standard in hammocks, we also liked the integration of the carabiners into the ends of the hammock. This makes for a very easy and quick setup of the hammock.</p><p>The final thing that we were big fans of as a group was how proud the owner was of the fact that her products are made in the USA. EVERYTHING is branded with “made in the USA” down to the straps.</p><div class='text-center center-pic landscape'><img ng-src='{{article.images[0]}}'></div><div class='inner-article-title-bree'>Some Things We Would Improve</div><p>While we loved their hammocks, there were a few things that left us a little wanting. The first of which was the apparel. While we are a big fan of their logo and slogan, the shirts were a fairly basic black cotton tee. I imagine that this is due to the fact that they are a hammock company and that apparel is more of a side thought for die hard customers. Hopefully as they grow as a company, these lines will improve as well.</p><div class='inner-article-title-bree'>Wrap-Up</div><p>While in a lot of ways a hammock is a hammock is a hammock, Alpine Leisure Co’s hammocks go above and beyond normal hammocks. They have truly aligned their product with their motto of “find comfort in nature” by providing an exceptionally easy to set up, and comfortable hammock. They are definitely worth the few extra dollars for someone who would like a little bit of a more comfortable experience outdoors.</p><div class='text-center center-pic portrait'><img ng-src='{{article.images[1]}}'></div>"
+    }
+
+  ],
+  "allArticles": [
+    {
+      "title": "Rappelling Through Yankee Doodle Canyon",
+      "intro": "It all started late one night, near a middle-of-nowhere town called Leeds, UT. The sleepy town was well past its own bedtime. That didn’t stop a meet up of the best adventure crew around.",
+      "link": "blog/article/index.html?id=0",
+      "imageSrc": "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/yankeedoodle%2Ftitle--2-.jpg?alt=media&token=7a295262-ab42-46c8-ae8a-bcdd2fbac2fd",
+      "date": "September 30th, 2016",
+      "dateObj": {
+        "year":2016,
+        "month":8,
+        "day":30
+      }
+    },
+    {
+      "title": "Yellowstone",
+      "intro": "Yellowstone made the perfect end to a great summer of adventures for our crew.  We were all really excited for this last hurrah before the school year started.",
+      "link": "blog/article/index.html?id=1",
+      "imageSrc": "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/Yellowstone%2Ftitle.jpg?alt=media&token=836feebb-2810-4277-9b7c-dc7c16bf77a5",
+      "date": "August 24th-27th, 2016",
+      "dateObj": {
+        "year":2016,
+        "month":8,
+        "day":24
+      }
+    },
+    {
+      "title": "Traveling Down",
+      "intro": "Hiking down to the Colorado River from the South Rim was amazing.  It was the first time for all of us so not knowing what to expect made the journey more exciting for everyone.",
+      "link": "blog/article/index.html?id=2",
+      "imageSrc": "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/grandcanyon%2Ftitle.jpg?alt=media&token=d89d8d2b-f6a0-4885-ae2b-d73d55de9235",
+      "date": "November 18th to 20th, 2016",
+      "dateObj": {
+        "year":2016,
+        "month":8,
+        "day":24
+      }
+    }
+  ],
+  "allSurvivalArticles": [
+    {
+      "title": "3 Utah County Adventures you NEED to try this winter",
+      "intro": "It all started late one night, near a middle-of-nowhere town called Leeds, UT. The sleepy town was well past its own bedtime. That didn’t stop a meet up of the best adventure crew around.",
+      "link": "survival/article/index.html?id=0",
+      "imageSrc": "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/winteractivitiessurvguide%2Ftitle_cropped.jpg?alt=media&token=78634308-07d9-42eb-9f42-b755261f9b77",
+      "date": "December 17th, 2016",
+      "dateObj": {
+        "year":2016,
+        "month":12,
+        "day":17
+      }
+    }
+  ],
+  "allGearReviews": [
+    {
+      "title": "Alpine Liesure Co. Gear Review",
+      "intro": "Lauren Suissi is a US Veteran, she commercially started making hammocks in August out of her home and now uses almost all of her free time making quality hammocks for customers.",
+      "link": "gearrev/article/index.html?id=0",
+      "imageSrc": "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/alpineliesureco%2Ftitle_cropped_alpine.jpg?alt=media&token=042ee269-f637-4088-a6c5-5d742b75797d",
+      "date": "December 20th, 2016",
+      "dateObj": {
+        "year":2016,
+        "month":12,
+        "day":20
+      }
+    }
+  ],
+  "featured": [
+    {
+      "title": "Rappelling Through Yankee Doodle Canyon",
+      "intro": "It all started late one night, near a middle-of-nowhere town called Leeds, UT. The sleepy town was well past its own bedtime. That didn’t stop a meet up of the best adventure crew around.",
+      "link": "blog/article/index.html?id=0",
+      "imageSrc": "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/yankeedoodle%2Ftitle_yd.jpg?alt=media&token=6b2a2bf1-04c8-4e69-89d5-53fd6fe87e56",
+      "date": "September 30th, 2016",
+      "dateObj": {
+        "year":2016,
+        "month":8,
+        "day":30
+      }
+    },
+    {
+      "title": "3 Utah County Adventures you NEED to try this winter",
+      "intro": "It all started late one night, near a middle-of-nowhere town called Leeds, UT. The sleepy town was well past its own bedtime. That didn’t stop a meet up of the best adventure crew around.",
+      "link": "survival/article/index.html?id=0",
+      "imageSrc": "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/winteractivitiessurvguide%2Ftitle_cropped.jpg?alt=media&token=78634308-07d9-42eb-9f42-b755261f9b77",
+      "date": "December 17th, 2016",
+      "dateObj": {
+        "year":2016,
+        "month":12,
+        "day":17
+      }
+    },
+    {
+      "title": "Yellowstone",
+      "intro": "Yellowstone made the perfect end to a great summer of adventures for our crew.  We were all really excited for this last hurrah before the school year started.",
+      "link": "blog/article/index.html?id=1",
+      "imageSrc": "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/Yellowstone%2Ftitle_cropped_ys.jpg?alt=media&token=638b6cb9-7d87-4858-8f93-5d0ae331042c",
+      "date": "August 24th-27th, 2016",
+      "dateObj": {
+        "year":2016,
+        "month":8,
+        "day":24
+      }
+    }
+  ]
+}
+
+
