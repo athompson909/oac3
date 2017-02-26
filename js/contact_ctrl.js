@@ -1,13 +1,13 @@
 app.controller('ContactCtrl', [
     '$scope',
     function($scope) {
-      setBackgroundImage("https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/contact%20us%20jumbo.jpg?alt=media&token=e840b851-f373-4727-8e11-ebd4b808b9a0");
+      setBackgroundImage("https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/contact-us-jumbo.jpg?alt=media&token=0a6c6006-2110-4859-97f5-f7a73f2d46a9");
     }
 ]);
 
 app.controller('PromoteCtrl', [
     '$scope',
     function($scope) {
-      setBackgroundImage("https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/contact%20us%20jumbo.jpg?alt=media&token=e840b851-f373-4727-8e11-ebd4b808b9a0");
+      setBackgroundImage("https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/contact-us-jumbo.jpg?alt=media&token=0a6c6006-2110-4859-97f5-f7a73f2d46a9");
     }
 ]);
