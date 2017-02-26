@@ -11,14 +11,14 @@ app.controller('HomeCtrl', [
             link: "blog/article/index.html?id=2"
         };
         $scope.gearrev = {
+            title: "Yellowstone",
+            image: "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/Yellowstone%2Ftitle_cropped_ys.jpg?alt=media&token=638b6cb9-7d87-4858-8f93-5d0ae331042c",
+            link: "blog/article/index.html?id=1"
+        };
+        $scope.survtip = {
             title: "Alpine Liesure Co. Gear Review",
             image: "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/thumbnail%20images%2Falcr.jpg?alt=media&token=1ca79755-8d57-4fe6-b15a-816475472b05",
             link: "gearrev/article/index.html?id=0"
-        };
-        $scope.survtip = {
-            title: "Utah County Winter Adventures",
-            image: "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/thumbnail%20images%2F3uac.jpg?alt=media&token=098539dc-9a00-45fe-8ef9-30ecef763da2",
-            link: "survival/article/index.html?id=0"
         };
 
 
