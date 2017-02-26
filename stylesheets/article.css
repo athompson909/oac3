@@ -37,7 +37,7 @@
   width: 50%;
 }
 
-.side-pic-portrait img, .side-pic-landscape img {
+.side-pic-portrait img, .side-pic-square img, .side-pic-landscape img {
   float: right;
   position: relative;
   margin: 12px;
@@ -45,6 +45,10 @@
 
 .side-pic-portrait img {
   width: 26%;
+}
+
+.side-pic-square img {
+  width: 38%;
 }
 
 .side-pic-landscape img {
@@ -105,7 +109,7 @@
 }
 
 .main-blog {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 #main-article-body {
