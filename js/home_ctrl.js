@@ -1,5 +1,3 @@
-var baseUrl = "file:///Users/adamthompson/Documents/personal/oacclone/oac2/nonrouteversion/";
-
 app.controller('HomeCtrl', [
     '$scope',
     '$http',
@@ -9,17 +7,17 @@ app.controller('HomeCtrl', [
 
         $scope.advlog = {
             title: "Grand Canyon South Rim!",
-            image: "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/grandcanyon%2Fthumbnail3.jpg?alt=media&token=a4797933-2062-4170-ad31-1437cf6790cd",
+            image: "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/thumbnail%20images%2Fgcsr.jpg?alt=media&token=d1cf6fb2-2066-4ec1-9795-7ed271e954cd",
             link: "blog/article/index.html?id=2"
         };
         $scope.gearrev = {
             title: "Alpine Liesure Co. Gear Review",
-            image: "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/alpineliesureco%2Ftitle_cropped_alpine.jpg?alt=media&token=042ee269-f637-4088-a6c5-5d742b75797d",
+            image: "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/thumbnail%20images%2Falcr.jpg?alt=media&token=1ca79755-8d57-4fe6-b15a-816475472b05",
             link: "gearrev/article/index.html?id=0"
         };
         $scope.survtip = {
             title: "3 Utah County Adventures you NEED to try this winter",
-            image: "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/winteractivitiessurvguide%2Ftitle_cropped.jpg?alt=media&token=78634308-07d9-42eb-9f42-b755261f9b77",
+            image: "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/thumbnail%20images%2F3uac.jpg?alt=media&token=098539dc-9a00-45fe-8ef9-30ecef763da2",
             link: "survival/article/index.html?id=0"
         };
 
