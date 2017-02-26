@@ -9,7 +9,7 @@ app.controller('HomeCtrl', [
 
         $scope.advlog = {
             title: "Traveling Down",
-            image: "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/grandcanyon%2Fthumbnail2.jpg?alt=media&token=a40c03db-aa7c-44a9-90d7-df4e53ccdaf7",
+            image: "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/grandcanyon%2Fthumbnail3.jpg?alt=media&token=a4797933-2062-4170-ad31-1437cf6790cd",
             link: "blog/article/index.html?id=2"
         };
         $scope.gearrev = {
