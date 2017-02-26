@@ -16,7 +16,7 @@ app.controller('HomeCtrl', [
             link: "gearrev/article/index.html?id=0"
         };
         $scope.survtip = {
-            title: "3 Utah County Adventures you NEED to try this winter",
+            title: "3 Winter Adventures You NEED to Try",
             image: "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/thumbnail%20images%2F3uac.jpg?alt=media&token=098539dc-9a00-45fe-8ef9-30ecef763da2",
             link: "survival/article/index.html?id=0"
         };
