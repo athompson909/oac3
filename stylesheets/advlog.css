@@ -111,7 +111,7 @@
 .main-blog-body {
   padding: 10px 40px 40px 40px;
   margin-top: 80px;
-  background-color: #e1e1e1;
+  background-color: #eee;
 }
 
 .sidebar-title-div-big {
@@ -127,7 +127,7 @@
 .sidebar-border {
   /*border: 2px solid #20457c;*/
   /*box-shadow: 0px 0px 12px #3b3a35;*/
-  background-color: #e1e1e1;
+  background-color: #eee;
   margin: 20px 60px 0 60px;
 }
 
@@ -150,8 +150,8 @@
 
 .sidebar-content-blog {
   /*min-height: 500px;*/
-  /*background-color: #e1e1e1;*/
+  /*background-color: #eee;*/
   padding: 0;
   margin: 0;
-  /*background: linear-gradient(to bottom, #e1e1e1, #ffffff);*/
+  /*background: linear-gradient(to bottom, #eee, #ffffff);*/
 }
