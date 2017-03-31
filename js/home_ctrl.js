@@ -16,9 +16,9 @@ app.controller('HomeCtrl', [
             link: "gearrev/article/index.html?id=0"
         };
         $scope.survtip = {
-            title: "Yellowstone",
-            image: "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/Yellowstone%2Ftitle_cropped_ys.jpg?alt=media&token=638b6cb9-7d87-4858-8f93-5d0ae331042c",
-            link: "blog/article/index.html?id=1"
+            title: "Doughnut Falls",
+            image: "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/doughnut%20falls%2Fdf-thumbnail.jpg?alt=media&token=9db1d823-84e5-4343-9529-1fb122e4c387",
+            link: "blog/article/index.html?id=3"
         };
 
 
