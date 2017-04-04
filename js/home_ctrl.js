@@ -11,7 +11,7 @@ app.controller('HomeCtrl', [
             link: "blog/article/index.html?id=2"
         };
         $scope.gearrev = {
-            title: "Alpine Liesure Co. Gear Review",
+            title: "Alpine Leisure Co. Gear Review",
             image: "https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/thumbnail%20images%2Falcr.jpg?alt=media&token=1ca79755-8d57-4fe6-b15a-816475472b05",
             link: "gearrev/article/index.html?id=0"
         };
