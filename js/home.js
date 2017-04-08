@@ -50,3 +50,32 @@ app.directive('dynamic', function ($compile) {
         }
     };
 });
+
+app.directive('footerCustom', function($compile) {
+   return {
+       link: function (scope, ele, attrs) {
+           scope.$watch(attrs.dynamic, function (html) {
+               ele.html(html);
+               $compile(ele.contents())(scope);
+           });
+       },
+       restrict: 'E',
+       template: '<footer>' +
+       '<div class="footer-top">' +
+        '<div id="fleftnav">' +
+            '<a href="contact.html">Contact us</a><br>' +
+            '<a href="promote.html">Promote with us</a><br>' +
+        '</div>' +
+        '<div id="frightnav">' +
+            '<a href="https://www.instagram.com/outdooradventurecrew/"><img src="images/socialmedia/instagram.png"></a>' +
+                '<a href="https://www.facebook.com/outdooradventurecrew"><img src="images/socialmedia/facebook.png"></a>' +
+                '<a href="https://www.youtube.com/channel/UCrQJ1WjL2YMK7ksa8xsg03g"><img src="images/socialmedia/youtube.png"></a>' +
+                '<a href="https://www.pinterest.com/adventurecrew10"><img src="images/socialmedia/pinterest.png"></a>' +
+        '</div>' +
+        '</div>' +
+        '<hr>' +
+        '<div class="col-sm-12 text-center" id="copyright">Copyright &copy 2016 | Outdoor Adventure Crew | this site developed and maintained by Adam Thompson' +
+        '</div>' +
+        '</footer>'
+   }
+});
