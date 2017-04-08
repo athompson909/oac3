@@ -48,6 +48,7 @@
 
 <link rel="stylesheet" href="stylesheets/header.css">
 <link rel="stylesheet" href="stylesheets/main2.css">
+<link rel="stylesheet" href="stylesheets/jumbo.css">
 <link rel="stylesheet" href="stylesheets/advlog.css">
 <link rel="stylesheet" href="stylesheets/article.css">
 <link rel="stylesheet" href="stylesheets/overlay.css">
@@ -57,29 +58,27 @@
 <header-custom></header-custom>
 <jumbo-img-header></jumbo-img-header>
 
+<div class="body-header">
+    Our Most Recent Entries
+</div>
+
 <div class="thumbnail-row">
     <div class="thumbnail">
         <a ng-href={{advlog.link}}>
-            <div class="text-center article-icon">
-                <img ng-src={{advlog.image}}>
-                <h3 class='title-div-pm'>{{advlog.title}}</h3>
-            </div>
+            <img ng-src={{advlog.image}}>
+            <h3 class='title-div-pm'>{{advlog.title}}</h3>
         </a>
     </div>
     <div class="thumbnail">
         <a ng-href={{gearrev.link}}>
-            <div class="text-center article-icon">
-                <img ng-src={{gearrev.image}}>
-                <h3 class='title-div-pm'>{{gearrev.title}}</h3>
-            </div>
+            <img ng-src={{gearrev.image}}>
+            <h3 class='title-div-pm'>{{gearrev.title}}</h3>
         </a>
     </div>
     <div class="thumbnail">
         <a ng-href={{survtip.link}}>
-            <div class="text-center article-icon">
-                <img ng-src={{survtip.image}}>
-                <h3 class='title-div-pm'>{{survtip.title}}</h3>
-            </div>
+            <img ng-src={{survtip.image}}>
+            <h3 class='title-div-pm'>{{survtip.title}}</h3>
         </a>
     </div>
 </div>
