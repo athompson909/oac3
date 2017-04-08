@@ -47,7 +47,7 @@
 <script src="js/home_ctrl.js"></script>
 
 <link rel="stylesheet" href="stylesheets/header.css">
-<link rel="stylesheet" href="stylesheets/main2.css">
+<link rel="stylesheet" href="stylesheets/home.css">
 <link rel="stylesheet" href="stylesheets/jumbo.css">
 <link rel="stylesheet" href="stylesheets/advlog.css">
 <link rel="stylesheet" href="stylesheets/article.css">
@@ -62,20 +62,20 @@
     Our Most Recent Entries
 </div>
 
-<div class="thumbnail-row">
-    <div class="thumbnail">
+<div class="thumbnail-row" style={{thumbnailRowStyle}}>
+    <div class="thumbnail" style={{thumbnailStyle}}>
         <a ng-href={{advlog.link}}>
             <img ng-src={{advlog.image}}>
             <h3 class='title-div-pm'>{{advlog.title}}</h3>
         </a>
     </div>
-    <div class="thumbnail">
+    <div class="thumbnail" style={{thumbnailStyle}}>
         <a ng-href={{gearrev.link}}>
             <img ng-src={{gearrev.image}}>
             <h3 class='title-div-pm'>{{gearrev.title}}</h3>
         </a>
     </div>
-    <div class="thumbnail">
+    <div class="thumbnail" style={{thumbnailStyle}}>
         <a ng-href={{survtip.link}}>
             <img ng-src={{survtip.image}}>
             <h3 class='title-div-pm'>{{survtip.title}}</h3>

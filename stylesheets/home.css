@@ -1,13 +1,11 @@
 .thumbnail-row {
     display: flex;
     justify-content: space-between;
-    margin: 2%;
+    margin: 0 2%;
 }
 
 .thumbnail {
     width: 32%;
-    margin: 0;
-    padding: 0;
 }
 
 .thumbnail img {
