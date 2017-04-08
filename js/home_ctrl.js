@@ -1,7 +1,7 @@
 app.controller('HomeCtrl', [
     '$scope',
-    '$http',
-    function ($scope, $http) {
+    '$window',
+    function ($scope, $window) {
         $scope.jumbotronWelcome = 'Sup??? welcome to...';
         $scope.jumbotronTitle = 'Outdoor Adventure Crew';
 
@@ -28,6 +28,10 @@ app.controller('HomeCtrl', [
             $scope.featured = obj.val();
             $scope.$apply();
         });
+
+
+        $scope.style = '';
+
     }
 ]);
 // old ys title: https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/Yellowstone%2Ftitle_cropped_ys.jpg?alt=media&token=638b6cb9-7d87-4858-8f93-5d0ae331042c
