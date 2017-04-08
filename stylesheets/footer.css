@@ -1,0 +1,96 @@
+footer {
+
+    background-color: #100900;
+    line-height: 28px;
+    font-family: 'Bree Serif', serif;
+    color: #a9b0ac;
+    margin: 8em 0 0 0;
+    padding: 2em 1.2em 1em 1.2em;
+}
+
+
+footer a, footer a:hover, footer a:visited, footer a:link {
+    color: #a9b0ac;
+}
+
+footer a:hover {
+    color: #20457c;
+    transition: color 0.5s ease;
+    /*text-decoration: underline;*/
+    /*border-bottom: 3px solid #20457c;*/
+}
+
+footer hr {
+    border-color:#a9b0ac;
+}
+
+#fleftnav {
+    font-size: 32px;
+    /*font-weight: 900;*/
+    line-height: 32px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#frightnav img {
+    width: 36px;
+    background-color: #ffffff;
+    padding: 0;
+    margin: .15em;
+    position: relative;
+    bottom: 0;
+}
+
+#frightnav img:hover {
+    /*bottom: 4px;*/
+    -webkit-animation-name: slideupward; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: .3s; /* Safari 4.0 - 8.0 */
+    animation-name: slideupward;
+    animation-duration: .3s;
+    bottom: 4px;
+}
+
+/* when coming off */
+#frightnav img:not( :hover ) {
+    -webkit-animation-name: slidedownward; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: .3s; /* Safari 4.0 - 8.0 */
+    animation-name: slidedownward;
+    animation-duration: .3s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes slideupward {
+    0% {bottom: 0px;}
+    100% {bottom: 4px;}
+}
+
+/* Standard syntax */
+@keyframes slideupward {
+    0% {bottom: 0px;}
+    100% {bottom: 4px;}
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes slidedownward {
+    0% {bottom: 4px;}
+    100% {bottom: 0px;}
+}
+
+/* Standard syntax */
+@keyframes slidedownward {
+    0% {bottom: 4px;}
+    100% {bottom: 0px;}
+}
+
+#copyright {
+    font-family: 'Open Sans', sans-serif;
+    margin: .8em;
+    color: #3b3a35;
+    width: 100%;
+    text-align: center;
+}

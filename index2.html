@@ -47,12 +47,12 @@
 <script src="js/home_ctrl.js"></script>
 
 <link rel="stylesheet" href="stylesheets/header.css">
+<link rel="stylesheet" href="stylesheets/footer.css">
 <link rel="stylesheet" href="stylesheets/home.css">
 <link rel="stylesheet" href="stylesheets/jumbo.css">
-<link rel="stylesheet" href="stylesheets/advlog.css">
-<link rel="stylesheet" href="stylesheets/article.css">
-<link rel="stylesheet" href="stylesheets/overlay.css">
-<link rel="stylesheet" href="stylesheets/gallery.css">
+<!--<link rel="stylesheet" href="stylesheets/advlog.css">-->
+<!--<link rel="stylesheet" href="stylesheets/article.css">-->
+<!--<link rel="stylesheet" href="stylesheets/overlay.css">-->
 <!--onresize="adjust()"-->
 <body ng-app="OutdoorAdvCrew" ng-controller="HomeCtrl">
 <header-custom></header-custom>
@@ -82,6 +82,79 @@
         </a>
     </div>
 </div>
+
+
+<div id="about-us-bg">
+    <div id="about-us">
+        <hr>
+        <div class="body-header-bg">Welcome</div>
+        <hr>
+        <p class="p-bree"><span>Welcome to our site!  We are the Outdoor Adventure Crew, a group of friends that loves being outdoors, experiencing the world around us, and inspiring others to do the same.</span>
+        </p>
+        <p class="p-opensans">Our goal is to help people understand that adventure is a state of mind
+            not a destination, and that as such does not have to be expensive or extravagant. We want
+            people to realize that you do not have to be a travel blogger, a mountain man or live out of
+            a van to reap the benefits of the outdoors. YOU the student, the parent, the worker with a
+            9-5, the human, have a right to live life to its fullest, to explore the world around you,
+            and to appreciate the beauty that surrounds us every day. Join us as we attempt to do the
+            same, as we find beauty in our backyard and in turn find ourselves.</p>
+        <!-- <br> -->
+        <p class="p-opensans" style="margin-left:40px">“We do not adventure to escape life, we
+            adventure so that life does not escape us”</p>
+        <p class="p-bree" style="margin-left:80px">-The Crew</p>
+        <hr>
+    </div>
+</div>
+
+
+<div class="body-header">
+    Featured Blog Articles
+</div>
+
+<div class="thumbnail-row" style={{thumbnailRowStyle}}>
+    <div class="thumbnail" style={{thumbnailStyle}}>
+        <a ng-href={{featured[0].link}}>
+            <img ng-src={{featured[0].imageSrc}}>
+            <h3 class='title-div-pm'>{{featured[0].title}}</h3>
+        </a>
+    </div>
+    <div class="thumbnail" style={{thumbnailStyle}}>
+        <a ng-href={{featured[1].link}}>
+            <img ng-src={{featured[1].imageSrc}}>
+            <h3 class='title-div-pm'>{{featured[1].title}}</h3>
+        </a>
+    </div>
+    <div class="thumbnail" style={{thumbnailStyle}}>
+        <a ng-href={{featured[2].link}}>
+            <img ng-src={{featured[2].imageSrc}}>
+            <h3 class='title-div-pm'>{{featured[2].title}}</h3>
+        </a>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-top">
+
+        <div id="fleftnav">
+            <!-- <a href="#/subscribe">Subscribe to our email list</a><br> -->
+            <a href="contact.html">Contact us</a><br>
+            <a href="promote.html">Promote with us</a><br>
+        </div>
+        <div id="frightnav">
+            <!--<a href="https://www.instagram.com/outdooradventurecrew/">Follow us!</a>-->
+            <a href="https://www.instagram.com/outdooradventurecrew/"><img
+                    src="images/socialmedia/instagram.png"></a><a
+                href="https://www.facebook.com/outdooradventurecrew"><img src="images/socialmedia/facebook.png"></a><a
+                href="https://www.youtube.com/channel/UCrQJ1WjL2YMK7ksa8xsg03g"><img
+                src="images/socialmedia/youtube.png"></a><a href="https://www.pinterest.com/adventurecrew10"><img
+                src="images/socialmedia/pinterest.png"></a>
+        </div>
+    </div>
+    <hr>
+    <div class="col-sm-12 text-center" id="copyright">Copyright &copy 2016 | Outdoor Adventure Crew | this site
+        developed and maintained by Adam Thompson
+    </div>
+</footer>
 
 
 </body>

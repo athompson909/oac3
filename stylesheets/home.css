@@ -1,3 +1,13 @@
+hr {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+    border-color: #100900;
+}
+
+
 .thumbnail-row {
     display: flex;
     justify-content: space-between;
@@ -28,7 +38,8 @@
     background-color: rgba(0,0,0,.4);
     text-decoration: none;
     position: relative;
-    top: -120px;
+    top: -140px;
+    margin-bottom: -140px;
     padding: 12px 6px;
 
     font-family: 'Bree Serif', serif;
@@ -43,7 +54,38 @@
     width: 100%;
 
     color: #3b3a35;
-    font-size: 40px;
+    font-size: 32px;
 
     margin: 2% 0;
+}
+
+#about-us-bg {
+    width: 100%;
+}
+
+#about-us {
+
+    margin: 6em auto 3em auto;
+    width: 85%;
+    padding: 12px 30px;
+    background-color: #eee;
+    color: rgba(16,9,0,1);
+}
+
+.body-header-bg {
+    font-family: 'Permanent Marker', sans-serif;
+    text-align: center;
+    width: 100%;
+
+    font-size: 58px;
+}
+
+.p-bree {
+    font-family: 'Bree Serif', serif;
+    font-size: 24px;
+}
+
+.p-opensans {
+    font-size: 20px;
+    margin-bottom: 1em;
 }

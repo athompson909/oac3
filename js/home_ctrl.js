@@ -30,7 +30,6 @@ app.controller('HomeCtrl', [
             link: "blog/article/index.html?id=3"
         };
 
-
         $scope.featured = [];
         var ref2 = firebase.database().ref().child('featured');
         ref2.once('value').then(function (obj) {
@@ -60,7 +59,7 @@ app.controller('HomeCtrl', [
 
         function getThumbnailStyle(homeWide) {
             return homeWide ? 'width:32%'
-                : 'width:100%;margin-bottom:-90px;';
+                : 'width:100%;margin-bottom: 4em;';
         }
 
         function getThumbnailRowStyle(homeWide) {
