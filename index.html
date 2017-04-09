@@ -45,6 +45,7 @@
 <script src="js/header.js"></script>
 <script src="js/jumbo.js"></script>
 <script src="js/home_ctrl.js"></script>
+<link rel="stylesheet" href="stylesheets/overlay.css">
 
 <link rel="stylesheet" href="stylesheets/header.css">
 <link rel="stylesheet" href="stylesheets/footer.css">
@@ -52,12 +53,22 @@
 <link rel="stylesheet" href="stylesheets/jumbo.css">
 
 <body ng-app="OutdoorAdvCrew" ng-controller="HomeCtrl">
+
 <header-custom></header-custom>
 <jumbo-img-header
     jumbo-title-bg="#jointhecrew"
     jumbo-title-sm="Outdoor<br/>&nbsp;&nbsp;&nbsp;Adventure<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Crew"
     jumbo-img="https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/Jumbotron.jpg?alt=media&token=509956ab-9875-46a0-b454-bbd3d18e7843">
 </jumbo-img-header>
+<!-- the overlay: -->
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <h3>Sign up for UPDATES on trips, promotions and giveaways from Outdoor Adventure Crew!<br/>#jointhecrew</h3>
+        <input type="email" value="Email address" onfocus="removeHint(this)" onblur="returnHint(this)"><br/>
+        <div id="submit-button">Yes!  I want updates</div>
+    </div>
+</div>
 
 <div class="body-header">
     Our Most Recent Entries
@@ -100,7 +111,7 @@
             and to appreciate the beauty that surrounds us every day. Join us as we attempt to do the
             same, as we find beauty in our backyard and in turn find ourselves.</p>
         <!-- <br> -->
-        <p class="p-opensans" style="margin-left:40px">“We do not adventure to escape life, we
+        <p class="p-opensans">“We do not adventure to escape life, we
             adventure so that life does not escape us”</p>
         <p class="p-bree" style="margin-left:80px">-The Crew</p>
         <hr>
