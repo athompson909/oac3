@@ -1,3 +1,46 @@
+// this doesn't work
+var showOverlay = true;
+setTimeout(function() {
+    showOverlay = true;
+}, 1200000);// waiting 20 minutes
+
+document.addEventListener("DOMContentLoaded", function() {
+    // setTimeout(function () {
+    //     if(showOverlay) {
+    //
+    //         openNav();
+    //     }
+    // }, 3000);
+});
+
+
+function openNav() {
+    showOverlay = false;
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+
+function removeHint(elem) {
+
+    if(elem.value = 'Email address') {
+        elem.value = '';
+        elem.style.color = '#000'
+    }
+}
+
+function returnHint(elem) {
+
+    if (elem.value == '') {
+        elem.value = 'Email address';
+        elem.style.color = '#ccc';
+    }
+}
+
+
+
 function scrollToTop() {
     // location.reload();
     document.body.scrollTop = document.documentElement.scrollTop = 0;
@@ -31,6 +74,7 @@ function add2ToLink(articlesarray) {
     }
 }
 
+// TODO: eliminate this function
 setBackgroundImage = function (imgUrl) {
     $(".jumbotron").css("background", "url('" + imgUrl + "') no-repeat center center");
     $(".jumbotron").css("background-size", "cover");

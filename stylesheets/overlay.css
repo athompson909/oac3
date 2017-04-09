@@ -1,39 +1,72 @@
-
 .overlay {
     height: 0%;
     width: 100%;
     position: fixed;
-    z-index: 4;
+    z-index: 20;
     top: 0;
     left: 0;
     background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.6);
+    background-color: rgba(0,0,0, 0.9);
     overflow-y: hidden;
-    /*transition: 0.5s;*/
+    transition: 0.5s;
 }
 
 .overlay-content {
+    z-index: 21;
     position: relative;
     top: 15%;
-    width: 50%;
-    text-align: center;
-    /*margin-top: 30px;*/
-    padding: 10% 50px 10% 50px;
     margin: 0 auto;
-    background-color: #ffffff;
-    font-size: 24px;
+    width: 60%;
+    height: 30%;
+    background-color: #F6F7F6;
+
+    padding:1em 2em 6em 2em;
+    line-height: 40px;
+    font-family: 'Bree Serif', serif;
+    /*text-align: center;*/
+    font-size: 32px;
 }
+
+.overlay-content input, #submit-button {
+    transition: background-color 0.5s linear;
+}
+
+.overlay-content input {
+    font-size: 28px;
+    width: 99.5%;
+    margin: -1em 0 0 0;
+    padding: .1em 0;
+    color:#ccc;
+    font-weight: 300;
+}
+
+#submit-button:hover {
+    cursor: pointer;
+    background-color: rgba(16,9,0,1);
+    transition: background-color 0.5s linear;
+}
+
+#submit-button {
+    font-size: 32px;
+
+    width: 100%;
+    margin: .7em 0;
+    background-color: #3E3831;
+    line-height: 32px;
+    padding: .3em 0;
+    color:#a9b0ac;
+    text-align: center;
+}
+
+
 
 .overlay a {
+    padding: 8px;
     text-decoration: none;
+    font-size: 36px;
     color: #818181;
-    /*display: block;*/
+    display: block;
     transition: 0.3s;
-}
-
-.overlay-content h3 {
-  font-size: 36px;
-  font-family: 'Permanent Marker', cursive;
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -41,42 +74,18 @@
 }
 
 .overlay .closebtn {
-  position: absolute;
-  top: 12px;
-  right: 32px;
-  font-size: 48px;
-}
-
-.overlay-content form {
-  width: 98%;
-  margin: 12px;
-
-}
-
-#email-input {
-  /*width: 75%;*/
-}
-
-#email-input-submit-button {
-  margin-left: 12px;
-  padding: 4px 6px 4px 6px;
-  background-color: #051a38;
-  color: #758aa8;
-  transition: 0.3s;
-}
-
-#email-input-submit-button:hover, #email-input-submit-button:focus {
-    background-color: #07224a;
-    transition: 0.3s;
-    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
 }
 
 @media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
 }

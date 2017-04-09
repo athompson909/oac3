@@ -12,13 +12,15 @@
 #ji-title-wide {
     /*display: none;*/
 
-    top: 5.3em;
+    top: 4.8em;
     position: relative;
     color: #fff;
-    padding: .1em .4em;
+    text-align: center;
 
-    margin: 0 0 0 .9em;
-    background-color: rgba(0,0,0,.4);
+    /*padding: .1em .4em;*/
+
+    /*margin: 0 0 0 .9em;*/
+    /*background-color: rgba(0,0,0,.4);*/
     /*!*width: 45%;*!*/
 
     font-size: 82px;
