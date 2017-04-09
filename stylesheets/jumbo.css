@@ -1,6 +1,6 @@
 .jumboimg {
     width:100%;
-    background: url('https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/Jumbotron.jpg?alt=media&token=509956ab-9875-46a0-b454-bbd3d18e7843') no-repeat top center;
+    /*background: url('https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/Jumbotron.jpg?alt=media&token=509956ab-9875-46a0-b454-bbd3d18e7843') no-repeat top center;*/
     background-size: cover;
     /*height: 42em;*/
 }

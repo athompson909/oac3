@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <title>Outdoor Adventure Crew</title>
-<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans|Permanent+Marker|Russo+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Permanent+Marker|Russo+One" rel="stylesheet">
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="3exwlvHOKHYxFmhgHijfnS31ePvJLFKE9Z2DXpb8K8g" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="p:domain_verify" content="dc03348a48dcdcac6f423cfd69284065"/>
 
@@ -36,108 +39,63 @@
 
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
+
 <script src="js/home.js"></script>
+<script src="js/home2.js"></script>
+<script src="js/header.js"></script>
+<script src="js/jumbo.js"></script>
 <script src="js/contact_ctrl.js"></script>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<link rel="stylesheet" href="stylesheets/main.css">
-<link rel="stylesheet" href="stylesheets/advlog.css">
-<link rel="stylesheet" href="stylesheets/article.css">
-<link rel="stylesheet" href="stylesheets/overlay.css">
-<link rel="stylesheet" href="stylesheets/gallery.css">
+<link rel="stylesheet" href="stylesheets/header.css">
+<link rel="stylesheet" href="stylesheets/footer.css">
+<link rel="stylesheet" href="stylesheets/home.css">
+<link rel="stylesheet" href="stylesheets/jumbo.css">
 
-<body>
-
-<div ng-app="OutdoorAdvCrew" ng-controller="PromoteCtrl">
-    <header class="container-fluid" id="header">
-        <div class="row">
-            <nav class="col-sm-5 text-left header-title">
-                <a ng-href="index.html">Outdoor Adventure Crew</a>
-            </nav>
-            <nav class="col-sm-7 text-right header-icons">
-                <a href="blog">Adventure Log</a><a href="gearrev">Reviews</a><a href="survival">Survival Guide</a>
-            </nav>
-        </div>
-    </header>
-    <section class="jumbotron" id="jumbo-contact">
-        <div class="container" id="jumbo-title-contact">
-            <div class="row">
-                <h4>Promote with us</h4>
-            </div>
-        </div>
-    </section>
+<body ng-app="OutdoorAdvCrew" ng-controller="ContactCtrl">
+<header-custom></header-custom>
+<jumbo-img-header
+        jumbo-title-sm="Promote<br/>&nbsp;&nbsp;with&nbsp;Us!"
+        jumbo-title-bg="Promote with Us!"
+        jumbo-img="https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/contact-us-jumbo%20(1).jpg?alt=media&token=07002b8b-e477-4f19-b310-fa006c5592fb">
+</jumbo-img-header>
 
 
-    <section class="container" id="contact-container">
-        <div id="contact-us-bg">
-            <div class="row" id="contact-us" style="font-size: 42px">
-                <div class="col-sm-12 text-left">
-                    <hr>
-                    <p class="p-opensans-big"><span>Are you a new business seeking to build awareness about your product or brand?  Are you an already established business seeking to continue to build on your existing consumer base?  Partnering with the Outdoor Adventure Crew is an excellent way to do both!</span>
-                        We work with our partners to establish a purpose for the promotion (gain followers, build brand
-                        awareness etc.) and then build a promotion package to suite their specific needs and at a price
-                        that is easy on marketing budgets.</p>
-                    <p class="p-opensans-big"><span>This could include:</span></p>
-                    <ul class="p-opensans-big">
-                        <li>Photos of us using your product posted on our outlets.</li>
-                        <li>B-roll footage for you to use on your outlets, site etc.</li>
-                        <li>Reviews of your product on our site and YouTube.</li>
-                        <li>Giveaways</li>
-                        <li>“Takeovers”</li>
-                        <li>Features in our story</li>
-                        <li style="font-style: italic">Anything else you can think of!</li>
-                    </ul>
-                    <p class="p-opensans-big">Why? While social media marketing may seem like a silly place to spend
-                        your advertising dollars, the fact of the matter is that the average American spends around
-                        <span>11 hours and 20 min</span> on social media <span>EACH WEEK</span> this means that social
-                        media is becoming one of the largest ways people consume entertainment each day. Promoting with
-                        our group puts your product in front of customers and allows them to see your products in use in
-                        a natural way that, through the power of suggestion, allows them to envision themselves using
-                        your product in their life. </p>
-                    <p class="p-opensans-big">Does it work? <span>ABSOLUTELY!</span> Take <a
-                            href="https://www.instagram.com/alpineleisureco/">@alpineleisureco</a> for example. Through
-                        a follower based promotion package, we were able to grow their following on instagram by <span>more than 12%</span>
-                        which translates directly into increased sales. </p>
-                    <p class="p-opensans-big">Send us an e-mail today (<a href="mailto:outdooradventurecrew@gmail.com">outdooradventurecrew@gmail.com</a>)
-                        to see what we can do for you! We look forward to working with you!</p>
+<div id="about-us-bg">
+    <div id="about-us">
+        <hr>
+        <p class="p-opensans-big"><span>Are you a new business seeking to build awareness about your product or brand?  Are you an already established business seeking to continue to build on your existing consumer base?  Partnering with the Outdoor Adventure Crew is an excellent way to do both!</span>
+            We work with our partners to establish a purpose for the promotion (gain followers, build brand
+            awareness etc.) and then build a promotion package to suite their specific needs and at a price
+            that is easy on marketing budgets.</p>
+        <p class="p-opensans-big"><span>This could include:</span></p>
+        <ul class="p-opensans-big">
+            <li>Photos of us using your product posted on our outlets.</li>
+            <li>B-roll footage for you to use on your outlets, site etc.</li>
+            <li>Reviews of your product on our site and YouTube.</li>
+            <li>Giveaways</li>
+            <li>“Takeovers”</li>
+            <li>Features in our story</li>
+            <li style="font-style: italic">Anything else you can think of!</li>
+        </ul>
+        <p class="p-opensans-big">Why? While social media marketing may seem like a silly place to spend
+            your advertising dollars, the fact of the matter is that the average American spends around
+            <span>11 hours and 20 min</span> on social media <span>EACH WEEK</span> this means that social
+            media is becoming one of the largest ways people consume entertainment each day. Promoting with
+            our group puts your product in front of customers and allows them to see your products in use in
+            a natural way that, through the power of suggestion, allows them to envision themselves using
+            your product in their life. </p>
+        <p class="p-opensans-big">Does it work? <span>ABSOLUTELY!</span> Take <a
+                href="https://www.instagram.com/alpineleisureco/">@alpineleisureco</a> for example. Through
+            a follower based promotion package, we were able to grow their following on instagram by <span>more than 12%</span>
+            which translates directly into increased sales. </p>
+        <p class="p-opensans-big">Send us an e-mail today (<a href="mailto:outdooradventurecrew@gmail.com">outdooradventurecrew@gmail.com</a>)
+            to see what we can do for you! We look forward to working with you!</p>
 
-                    <p class="p-bree" style="margin-left:80px">-The Crew</p>
-                    <hr>
-                </div>
-            </div>
-        </div>
-
-    </section>
+        <p class="p-bree" style="margin-left:80px">-The Crew</p>
+        <hr>
+    </div>
 </div>
 
-
-<footer class="container-fluid">
-    <div class="row text-center" id="footerrow">
-
-        <div class="col-sm-4 text-left" id="fleftnav">
-            <!-- <a href="#/subscribe">Subscribe to our email list</a><br> -->
-            <a href="contact.html">Contact us</a><br>
-            <a href="promote.html">Promote with us</a><br>
-        </div>
-        <div class="col-sm-8 text-right" id="frightnav">
-            <!--<a href="https://www.instagram.com/outdooradventurecrew/">FOLLOW US!</a>-->
-            <a href="https://www.instagram.com/outdooradventurecrew/"><img
-                    src="images/socialmedia/instagram.png"></a><a
-                href="https://www.facebook.com/outdooradventurecrew"><img src="images/socialmedia/facebook.png"></a><a
-                href="https://www.youtube.com/channel/UCrQJ1WjL2YMK7ksa8xsg03g"><img
-                src="images/socialmedia/youtube.png"></a><a href="https://www.pinterest.com/adventurecrew10"><img
-                src="images/socialmedia/pinterest.png"></a>
-        </div>
-    </div>
-    <hr>
-    <div class="col-sm-12 text-center" id="copyright">Copyright &copy 2016 | Outdoor Adventure Crew | this site
-        developed and maintained by Adam Thompson
-    </div>
-</footer>
-
-</div>
-
-
+<footer-custom></footer-custom>
 </body>
 </html>

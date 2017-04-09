@@ -89,3 +89,8 @@ hr {
     font-size: 20px;
     margin-bottom: 1em;
 }
+
+.p-opensans-big {
+    font-size: 21px;
+    word-wrap: break-word;
+}
