@@ -4,10 +4,10 @@ app.controller('HomeCtrl', [
     '$firebaseArray',
     function ($scope, $window, $firebaseArray) {
         setTimeout(function () {
-            // if(showOverlay) {
+            if(showOverlay) {
 
             openNav();
-            // }
+            }
         }, 20000);
 
         // TODO: remove

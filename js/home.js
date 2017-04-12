@@ -1,5 +1,5 @@
 // this doesn't work
-// var showOverlay = true;
+var showOverlay = true;
 // setTimeout(function() {
 //     showOverlay = true;
 // }, 1200000);// waiting 20 minutes
