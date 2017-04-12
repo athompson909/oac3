@@ -33,24 +33,6 @@ function validateEmail(email) {
     return re.test(email);
 }
 
-// function removeHint(elem) {
-//
-//     if(elem.value = 'Email address') {
-//         elem.value = '';
-//         elem.style.color = '#000'
-//     }
-// }
-//
-// function returnHint(elem) {
-//
-//     if (elem.value == '') {
-//         elem.value = 'Email address';
-//         elem.style.color = '#ccc';
-//     }
-// }
-
-
-
 function scrollToTop() {
     // location.reload();
     document.body.scrollTop = document.documentElement.scrollTop = 0;
