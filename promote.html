@@ -36,6 +36,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular-sanitize.js"></script>
+<script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
 
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
@@ -52,6 +53,18 @@
 <link rel="stylesheet" href="stylesheets/jumbo.css">
 
 <body ng-app="OutdoorAdvCrew" ng-controller="ContactCtrl">
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <form class="overlay-content" style={{emailInviteStyle}} name="emailForm">
+        <h3>Sign up for UPDATES on trips, promotions and giveaways from Outdoor Adventure Crew!<br/>#jointhecrew</h3>
+        <input type="email" style={{emailStyle+overlayInnerStyle}} name="emailInput" ng-model="email" ng-focus="removeHint()" ng-blur="showHint()" required><br/>
+        <input type="submit" style={{overlayInnerStyle}} id="submit-button" ng-click="update(email)" value="Yes, I want updates!" name="emailSubmit"/>
+    </form>
+    <div class="thankyou-overlay" style={{thankyouStyle}}>
+        <h3 style={{overlayInnerText}}>Thank you for signing up!  We hope you enjoy receiving our updates!</h3>
+    </div>
+</div>
 <header-custom></header-custom>
 <jumbo-img-header
         jumbo-title-sm="Promote<br/>&nbsp;&nbsp;with&nbsp;Us!"

@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             openNav();
         // }
-    }, 8000);
+    }, 20000);
 });
 
 
