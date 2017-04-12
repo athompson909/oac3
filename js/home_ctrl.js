@@ -1,7 +1,9 @@
 app.controller('HomeCtrl', [
     '$scope',
     '$window',
-    function ($scope, $window) {
+    '$firebaseArray',
+    function ($scope, $window, $firebaseArray) {
+
         // TODO: remove
         $scope.jumbotronWelcome = 'Sup??? welcome to...';
         $scope.jumbotronTitle = 'Outdoor Adventure Crew';
@@ -9,6 +11,51 @@ app.controller('HomeCtrl', [
         $scope.changed = false;
         $scope.wide = window.outerWidth > 740;
         console.log($scope.wide);
+
+        // email related stuff
+        var ref = firebase.database().ref().child("emails");
+        $scope.emailList = $firebaseArray(ref);
+        console.log($scope.emailList);
+        var emailSent = false;
+
+        $scope.email = 'Email address';
+        $scope.emailStyle="color:#ccc;";
+        $scope.emailInviteStyle="display:block;";
+        $scope.thankyouStyle="display:none;";
+        $scope.emailInviteStyle = getEmailInviteStyle($scope.wide);
+        $scope.thankyouStyle = getThankyouStyle($scope.wide);
+        $scope.overlayInnerStyle = getOverlayInnerStyle($scope.wide);
+
+        $scope.update = function(email) {
+            if(validateEmail(email)) {
+                console.log(email);
+                $scope.emailList.$add(email);
+                $scope.email = '';
+                emailSent = true;
+
+                $scope.emailInviteStyle = getEmailInviteStyle($scope.wide);
+                $scope.thankyouStyle = getThankyouStyle($scope.wide);
+                $scope.overlayInnerStyle = getOverlayInnerStyle($scope.wide);
+
+                setTimeout(function() {
+                    closeNav();
+                }, 2000);
+            }
+        };
+
+        $scope.removeHint = function() {
+            $scope.emailStyle="color:#000;";
+            $scope.email = '';
+        };
+
+        $scope.showHint = function() {
+            if($scope.email == '') {
+                $scope.emailStyle="color:#ccc;";
+                $scope.email = 'Email address';
+            }
+        };
+        $scope.showHint();
+
 
         $scope.thumbnailRowStyle = getThumbnailRowStyle($scope.wide);
         $scope.thumbnailStyle = getThumbnailStyle($scope.wide);
@@ -51,6 +98,9 @@ app.controller('HomeCtrl', [
             if(changed) {
                 $scope.thumbnailStyle = getThumbnailStyle($scope.wide);
                 $scope.thumbnailRowStyle = getThumbnailRowStyle($scope.wide);
+                $scope.emailInviteStyle = getEmailInviteStyle($scope.wide);
+                $scope.thankyouStyle = getThankyouStyle($scope.wide);
+                $scope.overlayInnerStyle = getOverlayInnerStyle($scope.wide);
                 changed = false;
             }
 
@@ -65,6 +115,22 @@ app.controller('HomeCtrl', [
         function getThumbnailRowStyle(homeWide) {
             return homeWide ? 'display:flex;justify-content:space-between'
                 : 'display:block;margin: 0 10%';
+        }
+
+        function getEmailInviteStyle(homeWide) {
+            return homeWide ?
+                (emailSent ? 'display:none' :'display:block;top:15%;width:75%;height:30%;font-size:32px;')
+                : (emailSent ? 'display:none' : 'display:block;top:20%;width:80%;height:60%;font-size:18px;');
+        }
+
+        function getThankyouStyle(homeWide) {
+            return homeWide ?
+                (emailSent ? 'display:block;top:15%;width:75%;height:30%;font-size:32px;' : 'display:none;')
+                : (emailSent ? 'display:block;top:20%;width:80%;height:60%;font-size:18px' : 'display:none;');
+        }
+
+        function getOverlayInnerStyle(homeWide) {
+            return homeWide ? '' : 'font-size:18px;line-height:22px;';
         }
     }
 ]);

@@ -1,16 +1,21 @@
 // this doesn't work
-var showOverlay = true;
-setTimeout(function() {
-    showOverlay = true;
-}, 1200000);// waiting 20 minutes
+// var showOverlay = true;
+// setTimeout(function() {
+//     showOverlay = true;
+// }, 1200000);// waiting 20 minutes
+
+/*
+TODO: stick this all into the home controller
+... make the width of the div be dependent on screen width
+ */
 
 document.addEventListener("DOMContentLoaded", function() {
-    // setTimeout(function () {
-    //     if(showOverlay) {
-    //
-    //         openNav();
-    //     }
-    // }, 3000);
+    setTimeout(function () {
+        // if(showOverlay) {
+
+            openNav();
+        // }
+    }, 30);
 });
 
 
@@ -23,21 +28,26 @@ function closeNav() {
     document.getElementById("myNav").style.height = "0%";
 }
 
-function removeHint(elem) {
-
-    if(elem.value = 'Email address') {
-        elem.value = '';
-        elem.style.color = '#000'
-    }
+function validateEmail(email) {
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
 }
 
-function returnHint(elem) {
-
-    if (elem.value == '') {
-        elem.value = 'Email address';
-        elem.style.color = '#ccc';
-    }
-}
+// function removeHint(elem) {
+//
+//     if(elem.value = 'Email address') {
+//         elem.value = '';
+//         elem.style.color = '#000'
+//     }
+// }
+//
+// function returnHint(elem) {
+//
+//     if (elem.value == '') {
+//         elem.value = 'Email address';
+//         elem.style.color = '#ccc';
+//     }
+// }
 
 
 
@@ -80,7 +90,7 @@ setBackgroundImage = function (imgUrl) {
     $(".jumbotron").css("background-size", "cover");
 }
 
-var app = angular.module('OutdoorAdvCrew', ['ngSanitize']);
+var app = angular.module('OutdoorAdvCrew', ['ngSanitize', 'firebase']);
 
 app.directive('dynamic', function ($compile) {
     return {
@@ -109,6 +119,7 @@ app.directive('footerCustom', function($compile) {
         '<div id="fleftnav">' +
             '<a href="contact.html">Contact us</a><br>' +
             '<a href="promote.html">Promote with us</a><br>' +
+            '<a href="javascript:void(0)" onclick="openNav()">Stay in the loop</a><br>' +
         '</div>' +
         '<div id="frightnav">' +
             '<a href="https://www.instagram.com/outdooradventurecrew/"><img src="images/socialmedia/instagram.png"></a>' +
@@ -117,7 +128,7 @@ app.directive('footerCustom', function($compile) {
                 '<a href="https://www.pinterest.com/adventurecrew10"><img src="images/socialmedia/pinterest.png"></a>' +
         '</div>' +
         '</div>' +
-        '<hr>' +
+        '<hr style="margin-top:12em">' +
         '<div class="col-sm-12 text-center" id="copyright">Copyright &copy 2016 | Outdoor Adventure Crew | this site developed and maintained by Adam Thompson' +
         '</div>' +
         '</footer>'

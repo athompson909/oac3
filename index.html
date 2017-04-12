@@ -36,6 +36,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular-sanitize.js"></script>
+<script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
 
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
@@ -63,11 +64,17 @@
 <!-- the overlay: -->
 <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
-        <h3>Sign up for UPDATES on trips, promotions and giveaways from Outdoor Adventure Crew!<br/>#jointhecrew</h3>
-        <input type="email" value="Email address" onfocus="removeHint(this)" onblur="returnHint(this)"><br/>
-        <div id="submit-button">Yes!  I want updates</div>
-    </div>
+
+        <form class="overlay-content" style={{emailInviteStyle}} name="emailForm">
+            <h3>Sign up for UPDATES on trips, promotions and giveaways from Outdoor Adventure Crew!<br/>#jointhecrew</h3>
+            <input type="email" style={{emailStyle+overlayInnerStyle}} name="emailInput" ng-model="email" ng-focus="removeHint()" ng-blur="showHint()" required><br/>
+            <input type="submit" style={{overlayInnerStyle}} id="submit-button" ng-click="update(email)" value="Yes, I want updates!" name="emailSubmit"/>
+        </form>
+        <div class="thankyou-overlay" style={{thankyouStyle}}>
+            <h3 style={{overlayInnerText}}>Thank you for signing up!  We hope you enjoy receiving our updates!</h3>
+        </div>
+
+</div>
 </div>
 
 <div class="body-header">
