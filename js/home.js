@@ -9,16 +9,6 @@ TODO: stick this all into the home controller
 ... make the width of the div be dependent on screen width
  */
 
-document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(function () {
-        // if(showOverlay) {
-
-            openNav();
-        // }
-    }, 20000);
-});
-
-
 function openNav() {
     showOverlay = false;
     document.getElementById("myNav").style.height = "100%";
@@ -116,3 +106,116 @@ app.directive('footerCustom', function($compile) {
         '</footer>'
    }
 });
+
+var wide = false, changed = false;
+var expanded = false;
+var emailSent = false;
+
+
+// TODO: make it so that the overlay changes if screen width changes: priority: low
+app.directive('emailOverlay', [
+    '$window',
+    '$firebaseArray',
+    function ($window, $firebaseArray) {
+        return {
+            link: link,
+            restrict: 'E',
+            template: '<div id="myNav" class="overlay">'+
+                        '<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>' +
+                        '<form class="overlay-content" style={{emailInviteStyle}} name="emailForm">' +
+                            '<h3>Sign up for UPDATES on trips, promotions and giveaways from Outdoor Adventure Crew!<br/>#jointhecrew</h3>' +
+                            '<input type="email" style={{emailStyle+overlayInnerStyle}} name="emailInput" ng-model="email" ng-focus="removeHint()" ng-blur="showHint()" required><br/>' +
+                            '<input type="submit" style={{overlayInnerStyle}} id="submit-button" ng-click="update(email)" value="Yes, I want updates!" name="emailSubmit"/>' +
+                        '</form>' +
+                        '<div class="thankyou-overlay" style={{thankyouStyle}}>' +
+                        '<h3 style={{overlayInnerText}}>Thank you for signing up!  We hope you enjoy receiving our updates!</h3>' +
+                        '</div>' +
+                    '</div>'
+        };
+
+
+    function link(scope, element, attrs) {
+        window.outerWidth > 740 ? wide = true : wide = false;
+
+        var ref = firebase.database().ref().child("emails");
+        scope.emailList = $firebaseArray(ref);
+        console.log(scope.emailList);
+
+        scope.email = 'Email address';
+        scope.emailStyle="color:#ccc;";
+        scope.emailInviteStyle="display:block;";
+        scope.thankyouStyle="display:none;";
+        scope.emailInviteStyle = getEmailInviteStyle(wide);
+        scope.thankyouStyle = getThankyouStyle(wide);
+        scope.overlayInnerStyle = getOverlayInnerStyle(wide);
+
+        scope.update = function(email) {
+            if(validateEmail(email)) {
+                console.log(email);
+                scope.emailList.$add(email);
+                scope.email = '';
+                emailSent = true;
+
+                scope.emailInviteStyle = getEmailInviteStyle(wide);
+                scope.thankyouStyle = getThankyouStyle(wide);
+                scope.overlayInnerStyle = getOverlayInnerStyle(wide);
+
+                setTimeout(function() {
+                    closeNav();
+                }, 2000);
+            }
+        };
+
+        scope.removeHint = function() {
+            scope.emailStyle="color:#000;";
+            scope.email = '';
+        };
+
+        scope.showHint = function() {
+            if(scope.email == '') {
+                scope.emailStyle="color:#ccc;";
+                scope.email = 'Email address';
+            }
+        };
+        scope.showHint();
+
+
+        angular.element($window).bind('resize', function() {
+            if($window.outerWidth < 740 && wide) {
+                changed = true;
+                wide = false;
+            }
+            else if($window.outerWidth > 740 && !wide) {
+                changed = true;
+                wide = true;
+            }
+            else changed = false;
+
+            if(changed) {
+                scope.emailInviteStyle = getEmailInviteStyle(wide);
+                scope.thankyouStyle = getThankyouStyle(wide);
+                scope.overlayInnerStyle = getOverlayInnerStyle(wide);
+                changed = false;
+            }
+
+            scope.$digest();
+        });
+
+    }
+
+    function getEmailInviteStyle(homeWide) {
+        return homeWide ?
+            (emailSent ? 'display:none' :'display:block;top:15%;width:75%;height:30%;font-size:32px;')
+            : (emailSent ? 'display:none' : 'display:block;top:20%;width:80%;height:60%;font-size:18px;');
+    }
+
+    function getThankyouStyle(homeWide) {
+        return homeWide ?
+            (emailSent ? 'display:block;top:15%;width:75%;height:30%;font-size:32px;' : 'display:none;')
+            : (emailSent ? 'display:block;top:20%;width:80%;height:60%;font-size:18px' : 'display:none;');
+    }
+
+    function getOverlayInnerStyle(homeWide) {
+        return homeWide ? '' : 'font-size:18px;line-height:22px;';
+    }
+}]);

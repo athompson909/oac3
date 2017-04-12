@@ -3,6 +3,12 @@ app.controller('HomeCtrl', [
     '$window',
     '$firebaseArray',
     function ($scope, $window, $firebaseArray) {
+        setTimeout(function () {
+            // if(showOverlay) {
+
+            openNav();
+            // }
+        }, 20000);
 
         // TODO: remove
         $scope.jumbotronWelcome = 'Sup??? welcome to...';

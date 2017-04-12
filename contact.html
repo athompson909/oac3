@@ -47,31 +47,21 @@
 <script src="js/jumbo.js"></script>
 <script src="js/contact_ctrl.js"></script>
 
+<link rel="stylesheet" href="stylesheets/overlay.css">
+
 <link rel="stylesheet" href="stylesheets/header.css">
 <link rel="stylesheet" href="stylesheets/footer.css">
 <link rel="stylesheet" href="stylesheets/home.css">
 <link rel="stylesheet" href="stylesheets/jumbo.css">
 
 <body ng-app="OutdoorAdvCrew" ng-controller="ContactCtrl">
-<div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-    <form class="overlay-content" style={{emailInviteStyle}} name="emailForm">
-        <h3>Sign up for UPDATES on trips, promotions and giveaways from Outdoor Adventure Crew!<br/>#jointhecrew</h3>
-        <input type="email" style={{emailStyle+overlayInnerStyle}} name="emailInput" ng-model="email" ng-focus="removeHint()" ng-blur="showHint()" required><br/>
-        <input type="submit" style={{overlayInnerStyle}} id="submit-button" ng-click="update(email)" value="Yes, I want updates!" name="emailSubmit"/>
-    </form>
-    <div class="thankyou-overlay" style={{thankyouStyle}}>
-        <h3 style={{overlayInnerText}}>Thank you for signing up!  We hope you enjoy receiving our updates!</h3>
-    </div>
-
-</div>
 <header-custom></header-custom>
 <jumbo-img-header
         jumbo-title-sm="Contact<br/>&nbsp;&nbsp;&nbsp;Us!"
         jumbo-title-bg="Contact Us!"
         jumbo-img="https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/contact-us-jumbo%20(1).jpg?alt=media&token=07002b8b-e477-4f19-b310-fa006c5592fb">
 </jumbo-img-header>
+<email-overlay></email-overlay>
 
 
 <div id="about-us-bg">

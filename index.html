@@ -46,6 +46,7 @@
 <script src="js/header.js"></script>
 <script src="js/jumbo.js"></script>
 <script src="js/home_ctrl.js"></script>
+
 <link rel="stylesheet" href="stylesheets/overlay.css">
 
 <link rel="stylesheet" href="stylesheets/header.css">
@@ -61,20 +62,22 @@
     jumbo-title-sm="Outdoor<br/>&nbsp;&nbsp;&nbsp;Adventure<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Crew"
     jumbo-img="https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/Jumbotron.jpg?alt=media&token=509956ab-9875-46a0-b454-bbd3d18e7843">
 </jumbo-img-header>
+<email-overlay></email-overlay>
 <!-- the overlay: -->
-<div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<!--<div id="myNav" class="overlay">-->
+    <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
 
-        <form class="overlay-content" style={{emailInviteStyle}} name="emailForm">
-            <h3>Sign up for UPDATES on trips, promotions and giveaways from Outdoor Adventure Crew!<br/>#jointhecrew</h3>
-            <input type="email" style={{emailStyle+overlayInnerStyle}} name="emailInput" ng-model="email" ng-focus="removeHint()" ng-blur="showHint()" required><br/>
-            <input type="submit" style={{overlayInnerStyle}} id="submit-button" ng-click="update(email)" value="Yes, I want updates!" name="emailSubmit"/>
-        </form>
-        <div class="thankyou-overlay" style={{thankyouStyle}}>
-            <h3 style={{overlayInnerText}}>Thank you for signing up!  We hope you enjoy receiving our updates!</h3>
-        </div>
+        <!--<form class="overlay-content" style={{emailInviteStyle}} name="emailForm">-->
+            <!--<h3>Sign up for UPDATES on trips, promotions and giveaways from Outdoor Adventure Crew!<br/>#jointhecrew</h3>-->
+            <!--<input type="email" style={{emailStyle+overlayInnerStyle}} name="emailInput" ng-model="email" ng-focus="removeHint()" ng-blur="showHint()" required><br/>-->
+            <!--<input type="submit" style={{overlayInnerStyle}} id="submit-button" ng-click="update(email)" value="Yes, I want updates!" name="emailSubmit"/>-->
+        <!--</form>-->
+        <!--<div class="thankyou-overlay" style={{thankyouStyle}}>-->
+            <!--<h3 style={{overlayInnerText}}>Thank you for signing up!  We hope you enjoy receiving our updates!</h3>-->
+        <!--</div>-->
 
-</div>
+<!--</div>-->
+
 </div>
 
 <div class="body-header">
