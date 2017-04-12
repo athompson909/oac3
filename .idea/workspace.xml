@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0f5a4833-f5f4-43ac-bd0b-da06043693ac" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/home.js" afterPath="$PROJECT_DIR$/js/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/home_ctrl.js" afterPath="$PROJECT_DIR$/js/home_ctrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/footer.css" afterPath="$PROJECT_DIR$/stylesheets/footer.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/overlay.css" afterPath="$PROJECT_DIR$/stylesheets/overlay.css" />
     </list>
     <ignored path="oac.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,20 +58,20 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/home.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+                <state relative-caret-position="255">
+                  <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
-                    <marker date="1491969585000" expanded="true" signature="3904:3919" ph="..." />
+                    <marker date="1491970209000" expanded="true" signature="3906:3921" ph="..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="home_ctrl.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="home_ctrl.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/home_ctrl.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="270">
@@ -224,8 +220,8 @@
         <option value="$PROJECT_DIR$/stylesheets/footer.css" />
         <option value="$PROJECT_DIR$/stylesheets/overlay.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/home.js" />
         <option value="$PROJECT_DIR$/js/home_ctrl.js" />
+        <option value="$PROJECT_DIR$/js/home.js" />
       </list>
     </option>
   </component>
@@ -373,7 +369,7 @@
       <workItem from="1490929180816" duration="3175000" />
       <workItem from="1491334508441" duration="470000" />
       <workItem from="1491620200653" duration="37064000" />
-      <workItem from="1491834632034" duration="7369000" />
+      <workItem from="1491834632034" duration="7460000" />
     </task>
     <task id="LOCAL-00001" summary="commented logs">
       <created>1490016594969</created>
@@ -386,7 +382,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75546000" />
+    <option name="totallyTimeSpent" value="75637000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="14" width="1440" height="873" extended-state="6" />
@@ -858,22 +854,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1491969585000" expanded="true" signature="3904:3919" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/home_ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1491970209000" expanded="true" signature="3906:3921" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
