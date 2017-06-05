@@ -89,15 +89,15 @@ app.directive('footerCustom', function($compile) {
        template: '<footer>' +
        '<div class="footer-top">' +
         '<div id="fleftnav">' +
-            '<a href="contact.html">Contact us</a><br>' +
-            '<a href="promote.html">Promote with us</a><br>' +
-            '<a href="javascript:void(0)" onclick="openNav()">Stay in the loop</a><br>' +
+            '<div class="fleftnav-link"><a href="contact.html">Contact us</a></div>' +
+            '<div class="fleftnav-link"><a href="promote.html">Promote with us</a></div>' +
+            '<div class="fleftnav-link"><a href="javascript:void(0)" onclick="openNav()">Stay in the loop</a></div>' +
         '</div>' +
         '<div id="frightnav">' +
             '<a href="https://www.instagram.com/outdooradventurecrew/"><img src="images/socialmedia/instagram.png"></a>' +
-                '<a href="https://www.facebook.com/outdooradventurecrew"><img src="images/socialmedia/facebook.png"></a>' +
-                '<a href="https://www.youtube.com/channel/UCrQJ1WjL2YMK7ksa8xsg03g"><img src="images/socialmedia/youtube.png"></a>' +
-                '<a href="https://www.pinterest.com/adventurecrew10"><img src="images/socialmedia/pinterest.png"></a>' +
+            '<a href="https://www.facebook.com/outdooradventurecrew"><img src="images/socialmedia/facebook.png"></a>' +
+            '<a href="https://www.youtube.com/channel/UCrQJ1WjL2YMK7ksa8xsg03g"><img src="images/socialmedia/youtube.png"></a>' +
+            '<a href="https://www.pinterest.com/adventurecrew10"><img src="images/socialmedia/pinterest.png"></a>' +
         '</div>' +
         '</div>' +
         '<hr style="margin-top:12em">' +

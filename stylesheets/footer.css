@@ -26,8 +26,11 @@ footer hr {
 
 #fleftnav {
     font-size: 32px;
-    /*font-weight: 900;*/
-    line-height: 36px;
+    line-height: 32px;
+}
+
+.fleftnav-link {
+    margin: 6px 0;
 }
 
 .footer-top {

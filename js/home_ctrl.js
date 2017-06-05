@@ -5,8 +5,7 @@ app.controller('HomeCtrl', [
     function ($scope, $window, $firebaseArray) {
         setTimeout(function () {
             if(showOverlay) {
-
-            openNav();
+                // openNav();
             }
         }, 20000);
 
@@ -16,12 +15,12 @@ app.controller('HomeCtrl', [
 
         $scope.changed = false;
         $scope.wide = window.outerWidth > 740;
-        console.log($scope.wide);
+        // console.log($scope.wide);
 
         // email related stuff
         var ref = firebase.database().ref().child("emails");
         $scope.emailList = $firebaseArray(ref);
-        console.log($scope.emailList);
+        // console.log($scope.emailList);
         var emailSent = false;
 
         $scope.email = 'Email address';
@@ -34,7 +33,7 @@ app.controller('HomeCtrl', [
 
         $scope.update = function(email) {
             if(validateEmail(email)) {
-                console.log(email);
+                // console.log(email);
                 $scope.emailList.$add(email);
                 $scope.email = '';
                 emailSent = true;
@@ -101,7 +100,7 @@ app.controller('HomeCtrl', [
             }
             else $scope.changed = false;
 
-            if(changed) {
+            if($scope.changed) {
                 $scope.thumbnailStyle = getThumbnailStyle($scope.wide);
                 $scope.thumbnailRowStyle = getThumbnailRowStyle($scope.wide);
                 $scope.emailInviteStyle = getEmailInviteStyle($scope.wide);
@@ -114,6 +113,7 @@ app.controller('HomeCtrl', [
         });
 
         function getThumbnailStyle(homeWide) {
+            console.log('changing wide?='+homeWide)
             return homeWide ? 'width:32%'
                 : 'width:100%;margin-bottom: 4em;';
         }
