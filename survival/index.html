@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <title>Outdoor Adventure Crew</title>
-<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans|Permanent+Marker|Russo+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Permanent+Marker|Russo+One" rel="stylesheet">
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="3exwlvHOKHYxFmhgHijfnS31ePvJLFKE9Z2DXpb8K8g" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="p:domain_verify" content="dc03348a48dcdcac6f423cfd69284065"/>
-<!--<meta name="viewport" content="width=device-width, initial-scale=.5">-->
 
 <script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
 <script>
@@ -38,119 +40,30 @@
 
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
+
 <script src="../js/home.js"></script>
+<script src="../js/home2.js"></script>
+<script src="../js/header.js"></script>
+<script src="../js/jumbo.js"></script>
+<script src="../js/viewer.js"></script>
 <script src="../js/survival_ctrl.js"></script>
 
+<link rel="stylesheet" href="../stylesheets/header.css">
+<link rel="stylesheet" href="../stylesheets/footer.css">
+<link rel="stylesheet" href="../stylesheets/home.css">
+<link rel="stylesheet" href="../stylesheets/jumbo.css">
+<link rel="stylesheet" href="../stylesheets/viewer.css">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<link rel="stylesheet" href="../stylesheets/main.css">
-<link rel="stylesheet" href="../stylesheets/advlog.css">
-<link rel="stylesheet" href="../stylesheets/article.css">
-<link rel="stylesheet" href="../stylesheets/overlay.css">
-<link rel="stylesheet" href="../stylesheets/gallery.css">
-
-<body>
-<!--<div id="fb-root"></div>-->
-
-<div ng-app="OutdoorAdvCrew" ng-controller="SurvivalCtrl">
-    <header class="container-fluid" id="header">
-        <div class="row">
-            <nav class="col-sm-5 text-left header-title">
-                <a ng-href="../index.html">Outdoor Adventure Crew</a>
-            </nav>
-            <nav class="col-sm-7 text-right header-icons">
-                <a href="../blog">Adventure Log</a><a href="../gearrev">Reviews</a><a href="../survival">Survival
-                Guide</a>
-            </nav>
-        </div>
-    </header>
-    <section class="jumbotron">
-        <div class="container" id="jumbo-title">
-            <div class="row">
-                <h3>{{jumbotronTitle}}</h3>
-            </div>
-        </div>
-    </section>
-    <div id="main">
-        <section class="container-fluid" id="main-container-blog">
-            <div class="row">
-
-                <div class="col-sm-8 main-blog">
-                    <div class="main-blog-body">
-                        <div class="row title-div-big text-center">{{innerTitle}}</div>
-                        <hr>
-                        <br><br>
-
-                        <div ng-repeat="article in articles">
-                            <a href="{{article.link}}" onclick="scrollToTop()"><img
-                                    src="{{article.imageSrc}}"></a><br><br>
-                            <a href="{{article.link}}" onclick="scrollToTop()"><p
-                                    class="title-bree smaller-line-height">{{article.title}}</p></a>
-                            <p class="article-date">{{article.date}}</p>
-                            <p>{{article.intro}}<a href="{{article.link}}" onclick="scrollToTop()"
-                                                   style="color: #20457c;"> Click to read more...</a></p>
-                            <hr>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-sm-4">
-                    <div class="top-spacing"></div>
-                    <hr>
-                    <div class="text-center sidebar-title-div-bree">Featured Articles</div>
-                    <hr>
-                    <div class="sidebar-featured">
-                        <div ng-repeat="article in featured">
-                            <div class="row">
-
-                                <div class="col-sm-2 sidebar-article-part1">
-                                    <a href="{{article.link}}" onclick="scrollToTop()"><img src="{{article.imageSrc}}"></a><br><br>
-                                </div>
-                                <div class="col-sm-2 sidebar-article-part2">
-                                    <a href="{{article.link}}" onclick="scrollToTop()"><p class="sidebar-article-title">
-                                        {{article.title}}</p></a>
-                                    <p class="sidebar-article-date">{{article.date}}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <hr>
-                    <div class="text-center sidebar-title-div-small"><a href="#">[ADVERTISEMENT]</a></div> -->
-                    <hr>
-                </div>
-            </div>
-        </section>
-    </div>
-</div>
-
-<footer class="container-fluid">
-    <div class="row text-center" id="footerrow">
-
-        <div class="col-sm-4 text-left" id="fleftnav">
-            <!-- <a href="#/subscribe">Subscribe to our email list</a><br> -->
-            <a href="../contact.html">Contact us</a><br>
-            <a href="../promote.html">Promote with us</a><br>
-        </div>
-        <div class="col-sm-8 text-right" id="frightnav">
-            <!--<a href="https://www.instagram.com/outdooradventurecrew/">FOLLOW US!</a>-->
-            <a href="https://www.instagram.com/outdooradventurecrew/"><img
-                    src="../images/socialmedia/instagram.png"></a><a
-                href="https://www.facebook.com/outdooradventurecrew"><img
-                src="../images/socialmedia/facebook.png"></a><a
-                href="https://www.youtube.com/channel/UCrQJ1WjL2YMK7ksa8xsg03g"><img
-                src="../images/socialmedia/youtube.png"></a><a href="https://www.pinterest.com/adventurecrew10"><img
-                src="../images/socialmedia/pinterest.png"></a>
-        </div>
-    </div>
-    <hr>
-    <div class="col-sm-12 text-center" id="copyright">Copyright &copy 2016 | Outdoor Adventure Crew | this site
-        developed and maintained by Adam Thompson
-    </div>
-</footer>
-
+<body ng-app="OutdoorAdvCrew" ng-controller="SurvivalCtrl">
+<header-custom prefix="../"></header-custom>
+<jumbo-img-header
+        jumbo-title-bg="Survival Guide"
+        jumbo-title-sm="Survival<br/>&nbsp;&nbsp;&nbsp;Guide"
+        jumbo-type="sub"
+        jumbo-img="https://firebasestorage.googleapis.com/v0/b/outdooradventurecrew-a3400.appspot.com/o/Jumbotron.jpg?alt=media&token=509956ab-9875-46a0-b454-bbd3d18e7843">
+</jumbo-img-header>
+<viewer></viewer>
+<footer-custom prefix="../"></footer-custom>
 
 </body>
 </html>

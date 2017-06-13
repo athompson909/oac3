@@ -5,7 +5,17 @@ app.directive('headerCustom', ['$window', function ($window) {
     return {
         link: link,
         restrict: 'E',
-        template: '<div id="header-area"><header><a class="header-left" id="h-l" href={{homeAddr}}>{{headerTitle}}</a><div class="header-right" id="h-r" dynamic="headerRight"></div></header>  <div class="pulldown-menu" id="p-m" style={{menuStyle}}><div><a href="blog">Adventure Log</a></div><div><a href="gearrev">Reviews</a></div><div><a href="survival">Survival Guide</a></div></div>  </div>'
+        template: '<div id="header-area">' +
+            '<header>' +
+                '<a class="header-left" id="h-l" ng-href={{homeAddr}}>{{headerTitle}}</a>' +
+                '<div class="header-right" id="h-r" dynamic="headerRight"></div>' +
+            '</header>' +
+                '<div class="pulldown-menu" id="p-m" style={{menuStyle}}>' +
+                    '<div><a ng-href={{blogLink}}>Adventure Log</a></div>' +
+                    '<div><a ng-href={{gearrevLink}}>Reviews</a></div>' +
+                    '<div><a ng-href={{survivalLink}}>Survival Guide</a></div>' +
+                '</div>' +
+            '</div>'
     };
 
     function link(scope, element, attrs) {
@@ -15,6 +25,9 @@ app.directive('headerCustom', ['$window', function ($window) {
         scope.menuStyle = 'display:none;height:0';
         scope.prefix = attrs.prefix;
         scope.homeAddr = attrs.prefix + 'index.html';
+        scope.blogLink = attrs.prefix + 'blog';
+        scope.gearrevLink = attrs.prefix + 'gearrev';
+        scope.survivalLink = attrs.prefix + 'survival';
 
         angular.element($window).bind('resize', function() {
             if($window.outerWidth < 740 && wide) {
@@ -53,7 +66,7 @@ app.directive('headerCustom', ['$window', function ($window) {
 
         function renderRightSide() {
             return wide ?
-                '<a href="blog">Adventure Log</a><a href="gearrev">Reviews</a><a href="survival">Survival Guide</a>'
+                '<a ng-href={{blogLink}}>Adventure Log</a><a ng-href={{gearrevLink}}>Reviews</a><a ng-href={{survivalLink}}>Survival Guide</a>'
                 : '<div class="menu-icon collapsible-header" ng-click="expandMenu()"><div class="mc-line"></div><div class="mc-line"></div><div class="mc-line"></div></div>';
         }
 

@@ -85,6 +85,9 @@ app.directive('footerCustom', function($compile) {
            scope.youtubeImg = attrs.prefix + 'images/socialmedia/youtube.png';
            scope.pinterestImg = attrs.prefix + 'images/socialmedia/pinterest.png';
 
+           scope.contactLink = attrs.prefix + 'contact.html';
+           scope.promoteLink = attrs.prefix + 'promote.html';
+
            scope.$watch(attrs.dynamic, function (html) {
                ele.html(html);
                $compile(ele.contents())(scope);
@@ -94,8 +97,8 @@ app.directive('footerCustom', function($compile) {
        template: '<footer>' +
        '<div class="footer-top">' +
         '<div id="fleftnav">' +
-            '<div class="fleftnav-link"><a href="contact.html">Contact us</a></div>' +
-            '<div class="fleftnav-link"><a href="promote.html">Promote with us</a></div>' +
+            '<div class="fleftnav-link"><a ng-href={{contactLink}}>Contact us</a></div>' +
+            '<div class="fleftnav-link"><a ng-href={{promoteLink}}>Promote with us</a></div>' +
             '<div class="fleftnav-link"><a href="javascript:void(0)" onclick="openNav()">Stay in the loop</a></div>' +
         '</div>' +
         '<div id="frightnav">' +
