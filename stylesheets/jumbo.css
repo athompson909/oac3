@@ -12,8 +12,9 @@
 #ji-title-wide {
     /*display: none;*/
 
-    top: 4.8em;
-    position: relative;
+    /*top: 4.8em;*/
+    top: 50%;
+
     color: #fff;
     text-align: center;
 
@@ -30,8 +31,9 @@
 
     font-family: 'Bree Serif', serif;
 
-    top: 6.8em;
-    position: relative;
+    /*top: 6.8em;*/
+    top: 30%;
+    /*position: relative;*/
     color: #fff;
     padding: .1em 2em .1em .6em;
 

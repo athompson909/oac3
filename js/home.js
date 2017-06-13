@@ -80,6 +80,11 @@ app.directive('dynamic', function ($compile) {
 app.directive('footerCustom', function($compile) {
    return {
        link: function (scope, ele, attrs) {
+           scope.instagramImg = attrs.prefix + 'images/socialmedia/instagram.png';
+           scope.facebookImg = attrs.prefix + 'images/socialmedia/facebook.png';
+           scope.youtubeImg = attrs.prefix + 'images/socialmedia/youtube.png';
+           scope.pinterestImg = attrs.prefix + 'images/socialmedia/pinterest.png';
+
            scope.$watch(attrs.dynamic, function (html) {
                ele.html(html);
                $compile(ele.contents())(scope);
@@ -94,10 +99,10 @@ app.directive('footerCustom', function($compile) {
             '<div class="fleftnav-link"><a href="javascript:void(0)" onclick="openNav()">Stay in the loop</a></div>' +
         '</div>' +
         '<div id="frightnav">' +
-            '<a href="https://www.instagram.com/outdooradventurecrew/"><img src="images/socialmedia/instagram.png"></a>' +
-            '<a href="https://www.facebook.com/outdooradventurecrew"><img src="images/socialmedia/facebook.png"></a>' +
-            '<a href="https://www.youtube.com/channel/UCrQJ1WjL2YMK7ksa8xsg03g"><img src="images/socialmedia/youtube.png"></a>' +
-            '<a href="https://www.pinterest.com/adventurecrew10"><img src="images/socialmedia/pinterest.png"></a>' +
+            '<a href="https://www.instagram.com/outdooradventurecrew/"><img src={{instagramImg}}></a>' +
+            '<a href="https://www.facebook.com/outdooradventurecrew"><img src={{facebookImg}}></a>' +
+            '<a href="https://www.youtube.com/channel/UCrQJ1WjL2YMK7ksa8xsg03g"><img src={{youtubeImg}}></a>' +
+            '<a href="https://www.pinterest.com/adventurecrew10"><img src={{pinterestImg}}></a>' +
         '</div>' +
         '</div>' +
         '<hr style="margin-top:12em">' +

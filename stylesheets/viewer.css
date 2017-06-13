@@ -1,0 +1,95 @@
+#viewer-main {
+    width: 100%;
+}
+
+#viewer-main a {
+    color: #100900;
+}
+
+#viewer-left {
+    background-color: #eee;
+    font-size: 18px;
+    /*float: left;*/
+}
+
+#viewer-right {
+    width: 30%;
+    margin: 3% 5% 3% 1em;
+}
+
+.viewer-thumbnails img {
+    width: 94%;
+}
+
+.smaller-line-height {
+    line-height: 28px;
+}
+
+.title-bree {
+    font-family: 'Bree Serif', serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.article-date {
+    font-family: 'Bree Serif', serif;
+    font-size: 22px;
+    line-height: 20px;
+    color: #3b3a35;
+    font-weight: bold;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#viewer-main p {
+    margin: 0 0 10px;
+}
+
+.title-div-big {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 54px;
+}
+
+.sidebar-title-div-bree {
+    font-family: 'Bree Serif', serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.viewer-thumbnails-right {
+    width:100%;
+    display:table;
+    margin: 4% 0 4% 0;
+}
+
+.viewer-thumbnails-right img {
+    width: 95%;
+    float: left;
+    position: relative;
+}
+
+.vw-img-cell, .vw-text-cell {
+
+    display:table-cell;
+    vertical-align:top;
+}
+
+.vw-img-cell {
+    width: 44%;
+}
+
+.sidebar-article-title {
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.sidebar-article-date {
+    font-style: italic;
+    color: #100900;
+    font-size: 16px;
+    line-height: 16px;
+}

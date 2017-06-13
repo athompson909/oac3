@@ -8,14 +8,16 @@ app.directive('jumboImgHeader', ['$window', function ($window) {
         restrict: 'E',
         template:
             '<div class="jumboimg jumbo-top" id="jumbo-main" style={{bgStyle}}> '+
-            '   <h1 dynamic="jumboTitle"></h1>' +
+            '   <h1 dynamic="jumboTitle" style="{{topOffset}}"></h1>' +
             '</div>'
     };
 
     function link(scope, element, attrs) {
-        console.log(attrs);
+        // console.log(attrs);
         window.outerWidth > 740 ? titleWide = true : titleWide = false;
         scope.jumboTitle = renderTitle();
+        scope.factor = attrs.jumboType == 'sub' ? .75 : 1;
+        scope.topOffset = getTopOffset();
         scope.jumboHeight = getHeight();
 
         scope.bgImage = 'background: url(\''+attrs.jumboImg+'\') no-repeat top center; background-size: cover;';
@@ -35,6 +37,7 @@ app.directive('jumboImgHeader', ['$window', function ($window) {
             if(titleChanged) {
                 scope.jumboTitle = renderTitle();
                 scope.bgStyle = getHeight()+scope.bgImage;
+                scope.topOffset = getTopOffset();
             }
 
             scope.$digest();
@@ -45,7 +48,11 @@ app.directive('jumboImgHeader', ['$window', function ($window) {
         }
 
         function getHeight() {
-            return titleWide ? 'height:42em;' : 'height:32em;';
+            return titleWide ? 'height:'+42*scope.factor+'em;' : 'height:'+32*scope.factor+'em;';
+        }
+
+        function getTopOffset() {
+            return titleWide ? 'position: relative;top:'+12.3*scope.factor+'em;' : 'position: relative;top:'+7.4*scope.factor+'em;';
         }
 
     }

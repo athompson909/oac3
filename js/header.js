@@ -5,7 +5,7 @@ app.directive('headerCustom', ['$window', function ($window) {
     return {
         link: link,
         restrict: 'E',
-        template: '<div id="header-area"><header><a class="header-left" id="h-l" href="index.html">{{headerTitle}}</a><div class="header-right" id="h-r" dynamic="headerRight"></div></header>  <div class="pulldown-menu" id="p-m" style={{menuStyle}}><div><a href="blog">Adventure Log</a></div><div><a href="gearrev">Reviews</a></div><div><a href="survival">Survival Guide</a></div></div>  </div>'
+        template: '<div id="header-area"><header><a class="header-left" id="h-l" href={{homeAddr}}>{{headerTitle}}</a><div class="header-right" id="h-r" dynamic="headerRight"></div></header>  <div class="pulldown-menu" id="p-m" style={{menuStyle}}><div><a href="blog">Adventure Log</a></div><div><a href="gearrev">Reviews</a></div><div><a href="survival">Survival Guide</a></div></div>  </div>'
     };
 
     function link(scope, element, attrs) {
@@ -13,6 +13,8 @@ app.directive('headerCustom', ['$window', function ($window) {
         scope.headerTitle = renderTitle();
         scope.headerRight = renderRightSide();
         scope.menuStyle = 'display:none;height:0';
+        scope.prefix = attrs.prefix;
+        scope.homeAddr = attrs.prefix + 'index.html';
 
         angular.element($window).bind('resize', function() {
             if($window.outerWidth < 740 && wide) {
