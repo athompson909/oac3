@@ -1,7 +1,6 @@
 app.controller('SurvivalArticleCtrl', [
     '$scope',
-    function($scope){
-
+    function($scope) {
       $scope.article = {};
       $scope.id = getParameterByName('id', null);
       $scope.getArticle = function() {
