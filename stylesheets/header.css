@@ -33,7 +33,7 @@ a:active {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: rgba(16,9,0,.8);
+    background-color: rgba(16,9,0,.95);
 }
 
 header a {

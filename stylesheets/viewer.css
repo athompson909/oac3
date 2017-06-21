@@ -1,18 +1,18 @@
-#viewer-main {
+.viewer-main {
     width: 100%;
 }
 
-#viewer-main a {
+.viewer-main a {
     color: #100900;
 }
 
-#viewer-left {
+.viewer-left {
     background-color: #eee;
     font-size: 18px;
     /*float: left;*/
 }
 
-#viewer-right {
+.viewer-right {
     width: 30%;
     margin: 3% 5% 3% 1em;
 }

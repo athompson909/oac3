@@ -1,24 +1,16 @@
-app.directive('viewer', ['$window', function ($window) {
+app.directive('articleViewer', ['$window', function ($window) {
 
     return {
         link: link,
         restrict: 'E',
-        template: '<div class="viewer-main" style={{mainStyle}}>' +
-                '<div class="viewer-left" style={{leftStyle}}>' +
-                    '<div style={{innerTitleStyle}}>{{innerTitle}}</div> ' +
-                    '<br><br> ' +
-                    '<div ng-repeat="article in articles" class="viewer-thumbnails"> ' +
-                        '<a ng-href={{article.link}}><img ng-src={{article.imageSrc}}></a><br><br> ' +
-                        '<a ng-href={{article.link}}><p class="title-bree smaller-line-height">{{article.title}}</p></a> ' +
-                        '<p class="article-date">{{article.date}}</p> ' +
-                        '<p>{{article.intro}}<a ng-href={{article.link}} style="color: #20457c;"> Click to read more...</a></p> ' +
-                        '<hr> ' +
-                        '<br> ' +
-                    '</div> ' +
+        template: '<div class="viewer-main main-blog" style={{mainStyle}}>' +
+                '<div id="viewer-left" style={{leftStyle}}>' +
+                '<div class="article-content" dynamic="article.articleContent"></div>' +
+                '<hr>' +
                 '</div>' +
                 '<div class="viewer-right" style={{rightStyle}}> ' +
-                '<hr/> ' +
-                '<div class="sidebar-title-div-bree">Featured Articles</div> ' +
+                    '<hr/> ' +
+                    '<div class="sidebar-title-div-bree">Featured Articles</div> ' +
                     '<hr/> ' +
                     '<div class="sidebar-featured"> ' +
                         '<div ng-repeat="article in featured" class="viewer-thumbnails-right"> ' +
@@ -29,7 +21,8 @@ app.directive('viewer', ['$window', function ($window) {
                             '</article>' +
                         '</div> ' +
                     '</div> ' +
-                    '<hr/> ' +
+                    '<app-map style="height:375px;" center="loc"></app-map>' +
+                '<hr/> ' +
                 '</div>' +
             '</div>'
 

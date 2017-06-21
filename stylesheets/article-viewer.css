@@ -1,0 +1,73 @@
+.article-content {
+    font-size: 20px;
+}
+
+.title-div-article {
+    font-family: 'Bree Serif', serif;
+    font-size: 32px;
+    text-align: center;
+}
+
+.main-blog span {
+    font-family: 'Bree Serif', serif;
+    font-size: 21px;
+}
+
+
+.side-pic-landscape img {
+    width: 55%;
+}
+
+.side-pic-square img {
+    width: 38%;
+}
+
+.side-pic-portrait img, .side-pic-square img, .side-pic-landscape img {
+    float: right;
+    position: relative;
+    margin: 12px;
+}
+
+.side-pic-portrait img {
+    width: 26%;
+}
+
+.side-pic-portrait img, .side-pic-square img, .side-pic-landscape img {
+    float: right;
+    position: relative;
+    margin: 12px;
+}
+
+.landscape img {
+    width: 85%;
+}
+
+.center-pic img {
+    margin: 20px;
+}
+
+.inner-article-title-bree {
+    margin-bottom: 6px;
+    font-size: 24px;
+}
+
+.inner-article-title-bree, .sidebar-title-bree {
+    font-family: 'Bree Serif', serif;
+}
+
+.fb-comments-outer {
+    width: 100%;
+    /*padding: 5%;*/
+}
+
+.fb-comments-inner {
+    width: 80%;
+    background-color: #F6F7F6;
+    margin: 0 auto;
+}
+
+.fb-comments-inner p {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 20px;
+}

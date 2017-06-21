@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <title>Outdoor Adventure Crew</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans|Permanent+Marker|Russo+One" rel="stylesheet">
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -41,177 +42,45 @@
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 <script src="../../js/home.js"></script>
+<script src="../../js/header.js"></script>
+<script src="../../js/article_viewer.js"></script>
+<!--<script src="../../js/article_jumbo.js"></script>-->
+<!--<script src="../../js/article_body.js"></script>-->
+
+
 <script src="../../js/article_ctrl.js"></script>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<link rel="stylesheet" href="../../stylesheets/main.css">
-<link rel="stylesheet" href="../../stylesheets/advlog.css">
-<link rel="stylesheet" href="../../stylesheets/article.css">
-<link rel="stylesheet" href="../../stylesheets/overlay.css">
-<link rel="stylesheet" href="../../stylesheets/gallery.css">
+<link rel="stylesheet" href="../../stylesheets/header.css">
+<link rel="stylesheet" href="../../stylesheets/viewer.css">
+<link rel="stylesheet" href="../../stylesheets/article-viewer.css">
+<link rel="stylesheet" href="../../stylesheets/footer.css">
+<!--<link rel="stylesheet" href="../../stylesheets/main.css">-->
+<!--<link rel="stylesheet" href="../../stylesheets/advlog.css">-->
+<!--<link rel="stylesheet" href="../../stylesheets/article.css">-->
+<!--<link rel="stylesheet" href="../../stylesheets/overlay.css">-->
+<!--<link rel="stylesheet" href="../../stylesheets/gallery.css">-->
 
-<body>
-<div id="fb-root"></div>
-
-
-<div ng-app="OutdoorAdvCrew" ng-controller="ArticleCtrl">
-
-    <header class="container-fluid" id="header">
-        <div class="row">
-            <nav class="col-sm-5 text-left header-title">
-                <a href="../../index.html">Outdoor Adventure Crew</a>
-            </nav>
-            <nav class="col-sm-7 text-right header-icons">
-                <a href="../../blog">Adventure Log</a><a href="../../gearrev">Reviews</a><a href="../../survival">Survival
-                Guide</a>
-            </nav>
-        </div>
-    </header>
-    <section class="jumbotron">
-        <div class="container" id="jumbo-title">
-            <div class="row">
-                <h3>{{article.jumbotronTitle}}</h3>
-                <h2>Date: {{article.date}}, Logged by: {{article.loggedBy}}</h2>
-            </div>
-        </div>
-    </section>
-    <div id="main">
-        <section class="container-fluid" id="main-container-blog">
-            <div class="row">
-
-                <div class="col-sm-8 main-blog">
-                    <div class="main-blog-body">
-                        <!-- <div class="article-header">
-                          <p><span>Date: </span>9/17/2016</p>
-                          <p><span>Logged by: </span>Kimberly Jackson</p>
-                        </div> -->
-                        <!--<br>-->
-                        <div class="article-content" dynamic="article.articleContent"></div>
-
-
-                        <!--<hr>-->
-                        <!--<div class="row title-div-article text-center">Quick Stats:</div>-->
-                        <!--<hr>-->
-                        <!--<br>-->
-                        <!--<p><span>Days: </span>{{article.days}}</p>-->
-                        <!--<p><span>Nights: </span>{{article.nights}}</p>-->
-                        <!--&lt;!&ndash;<p><span>Where we stayed: </span>{{article.whereWeCamped}}</p>&ndash;&gt;-->
-                        <!--<p><span>Trails we hiked: </span>{{article.trailsWeHiked}}</p>-->
-                        <!--<p><span>Miles hiked: </span>{{article.milesHiked}}</p>-->
-                        <!--<p><span>Permits needed: </span>{{article.permitsNeeded}}</p>-->
-                        <!--<p><span>Suggested time of year: </span>{{article.suggestedTimeOfYear}}</p>-->
-                        <!--<p><span>Gear rating: </span>{{article.gearRating}}</p>-->
-                        <!--<p><span>Difficulty: </span>{{article.difficulty}}</p>-->
-                        <!--<p><span>Enjoyability: </span>{{article.enjoyability}}</p>-->
-                        <!--<br>-->
-                        <!--<hr>-->
-                        <!--<div class="row title-div-article text-center">Log:</div>-->
-                        <!--<hr>-->
-                        <!--<div class="article-content">-->
-                            <!--<p>Doughnut falls is a waterfall up Little Cottonwood Canyon near Salt Lake City and favorite swimming hole for locals. When we went it was towards the end of January so it was still what you would consider "Winter conditions". In the Summer, the trail is clearly cut and marked but with snowfall the trail may be slightly harder to locate. Luckily, the trail wasn't too hard to find and navigate. The hike to the falls is on a slight incline but isn't a hard hike at all.</p>-->
-                            <!--<p>According to online reviews, the trail is packed with people during the Summer months but because we went in the Winter we only encountered a few people. The natural beauty around the trail is stunning and the snow on the mountains/tree tops was absolutely beautiful! I did the hike with snowshoes (which for the most part helped pack down some of the snow for the guys hiking behind me) but snowshoes were not a requirement for the hike. One girl did the hike in ankle socks and tennis shoes.</p>-->
-                            <!--<div class="center-pic landscape"><img src="{{article.images[0]}}"></div>-->
-                            <!--<div class="side-pic-portrait"><img src="{{article.images[1]}}"></div>-->
-                            <!--<p>Once we reached the falls, it took us a few minutes to hike up to the actual Donut Cave entrance. This part was a fun challenge as we were hiking up a steep grade in snow that was waist deep. It was amusing as each time Ethan, who was in front of me, took a step, it would push snow backwards towards me, so I felt like I was the one who was forging the path for the group.</p>-->
-                            <!--<p>Food isn't a necessity on this hike but water definitely is! This hike is best done with a small day pack that can hold water and maybe a snack or two. In the Winter, good shoes and waterproof jackets, pants, and gloves go a long way. It was snowing pretty hard when we were hiking back to the parking lot and at that point I wished I had brought some ski goggles to keep snow off my face/eyes. </p>-->
-                            <!--<div class="side-pic-square"><img src="{{article.images[2]}}"></div>-->
-                            <!--<p>I thought the cave was super cool! The “donut” wasn't all the way frozen but there were still some really cool ice formations to look at. I got some really cool photos on this hike so bringing a camera is a must. There is a pool of water in the cave and we had to cross that using a log to get a better view of the “donut” but it was still a really cool cave/ waterfall. </p>-->
-                            <!--<p>This hike is great because it’s easy, fun, beautiful, and doesn't require a permit. This does make the hike popular and crowded in the Summer but it's definitely worth going to and seeing regardless of the season :)</p>-->
-                            <!--<div class="center-pic landscape"><img src="{{article.images[3]}}"></div>-->
-                            <!--<div class="inner-article-title-bree">Directions:</div>-->
-                            <!--<p>Drive 9 miles up Big Cottonwood Canyon to the Mill D Trailhead. Take a right towards the Jordan Pines picnic area. You'll pass private summer homes on your way to the trailhead parking lot. Follow the signs to Donut Falls.</p>-->
-                        <!--</div>-->
-                        <!--<br>-->
-                    </div>
-                </div>
-
-
-                <div class="col-sm-4">
-                    <div class="top-spacing"></div>
-
-                    <hr>
-                    <div class="text-center"><p class="sidebar-title-div-bree">Featured Articles</p></div>
-                    <hr>
-                    <div class="sidebar-featured">
-                        <div ng-repeat="article in featured">
-                            <div class="row">
-
-                                <div class="col-sm-2 sidebar-article-part1">
-                                    <a ng-href={{article.link}}><img ng-src={{article.imageSrc}}></a><br><br>
-                                </div>
-                                <div class="col-sm-2 sidebar-article-part2">
-                                    <a href="{{article.link}}"><p class="sidebar-article-title">{{article.title}}</p>
-                                    </a>
-                                    <p class="sidebar-article-date">{{article.date}}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- <hr>
-                    <div class="text-center sidebar-title-div-small"><a href="#">[ADVERTISEMENT]</a></div> -->
-
-
-                    <hr>
-                    <!-- <p class="sidebar-title-bree">Where We Camped</p> -->
-                    <app-map style="height:375px;" center="loc"></app-map>
-
-                    <br><br><br>
-                </div>
-            </div>
-        </section>
-
-        <section class="container">
-            <div class="row">
-                <div class="col-sm-12" id="comment">
-                    <h3>COMMENTS</h3>
-                    <!-- <div class="fb-comments" data-href="http://www.adamcthompson.com/oac/index.html#/article?id=0" data-numposts="5"></div> -->
-                    <!-- <div class="fb-comments" data-href="http://www.outdooradventurecrew.com" data-width="600px" data-numposts="5"></div> -->
-                    <!-- <div id="fb-comment-box" dyn-fb-comment-box
-                            page-href="http://www.adamcthompson.com/oac/index.html#/article?id={{id}}";
-                            numposts="5"
-                            colorscheme="light">
-                    </div> -->
-                    <div class="fb-comments"
-                         dyn-fb-comment-box
-                         page-href="http://www.outdooradventurecrew.com/blog/article/index.html?id={{id}}"
-                         data-numposts="5">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- to right here -->
-
-    </div>
-</div>
-
-
-<footer class="container-fluid">
-    <div class="row text-center" id="footerrow">
-
-        <div class="col-sm-4 text-left" id="fleftnav">
-            <!-- <a href="#/subscribe">Subscribe to our email list</a><br> -->
-            <a href="../../contact.html">Contact us</a><br>
-            <a href="../../promote.html">Promote with us</a><br>
-        </div>
-        <div class="col-sm-8 text-right" id="frightnav">
-            <!--<a href="https://www.instagram.com/outdooradventurecrew/">FOLLOW US!</a>-->
-            <a href="https://www.instagram.com/outdooradventurecrew/"><img src="../../images/socialmedia/instagram.png"></a>
-            <a href="https://www.facebook.com/outdooradventurecrew"><img
-                    src="../../images/socialmedia/facebook.png"></a>
-            <a href="https://www.youtube.com/channel/UCrQJ1WjL2YMK7ksa8xsg03g"><img
-                    src="../../images/socialmedia/youtube.png"></a>
-            <a href="https://www.pinterest.com/adventurecrew10"><img src="../../images/socialmedia/pinterest.png"></a>
+<body ng-app="OutdoorAdvCrew" ng-controller="ArticleCtrl">
+    <div id="fb-root"></div>
+    <header-custom prefix="../../"></header-custom>
+    <div class="jumboimg jumbo-top" id="jumbo-main" style={{jumboBg}}>
+        <div style={{jumboTitleStyle}}>
+            <h1 style={{jumboH1}}>{{article.jumbotronTitle}}</h1>
+            <h2 style={{jumboH2}}>Logged by {{article.loggedBy}}, {{article.date}}</h2>
         </div>
     </div>
-    <hr>
-    <div class="col-sm-12 text-center" id="copyright">Copyright &copy 2016 | Outdoor Adventure Crew | this site
-        developed and maintained by Adam Thompson
+    <article-viewer></article-viewer>
+    <div class="fb-comments-outer" id="comment">
+        <div class="fb-comments-inner">
+            <p>COMMENTS</p>
+            <div class="fb-comments"
+                 dyn-fb-comment-box
+                 page-href="http://www.outdooradventurecrew.com/blog/article/index.html?id={{id}}"
+                 data-numposts="5">
+            </div>
+        </div>
     </div>
-</footer>
 
-
+    <footer-custom prefix="../../"></footer-custom>
 </body>
 </html>
