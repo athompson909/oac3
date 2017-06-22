@@ -13,13 +13,16 @@
     font-size: 21px;
 }
 
+.portrait img {
+    width: 50%;
+}
 
 .side-pic-landscape img {
     width: 55%;
 }
 
 .side-pic-square img {
-    width: 38%;
+    width: 48%;
 }
 
 .side-pic-portrait img, .side-pic-square img, .side-pic-landscape img {
@@ -29,7 +32,7 @@
 }
 
 .side-pic-portrait img {
-    width: 26%;
+    width: 36%;
 }
 
 .side-pic-portrait img, .side-pic-square img, .side-pic-landscape img {
@@ -43,7 +46,7 @@
 }
 
 .center-pic img {
-    margin: 20px;
+    margin: 20px auto;
 }
 
 .inner-article-title-bree {
@@ -70,4 +73,13 @@
     font-size: 24px;
     font-weight: normal;
     margin: 20px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.article-content iframe {
+    width: 90%;
+    height: 12em;
 }

@@ -24,6 +24,10 @@ a:active {
     text-decoration: none;
 }
 
+.small-link {
+  font-size: 12px;
+}
+
 header {
   position: fixed;
   width: 100%;
