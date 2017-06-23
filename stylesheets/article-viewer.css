@@ -85,5 +85,6 @@ img {
 }
 
 .small-link {
-    font-size: 16px;
+    color:#0000EE;
+    font-style: italic;
 }
