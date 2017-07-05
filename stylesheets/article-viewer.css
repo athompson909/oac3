@@ -84,6 +84,8 @@ img {
     height: 12em;
 }
 
+/*bad link name*/
+/*TODO: change the name (you'll also have to in db for surv guide html id=0)*/
 .small-link {
     color:#0000EE;
     font-style: italic;

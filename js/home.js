@@ -87,6 +87,7 @@ app.directive('footerCustom', function($compile) {
 
            scope.contactLink = attrs.prefix + 'contact.html';
            scope.promoteLink = attrs.prefix + 'promote.html';
+           scope.promoLink = attrs.prefix + 'promo';
 
            scope.$watch(attrs.dynamic, function (html) {
                ele.html(html);
@@ -100,6 +101,7 @@ app.directive('footerCustom', function($compile) {
             '<div class="fleftnav-link"><a ng-href={{contactLink}}>Contact us</a></div>' +
             '<div class="fleftnav-link"><a ng-href={{promoteLink}}>Promote with us</a></div>' +
             '<div class="fleftnav-link"><a href="javascript:void(0)" onclick="openNav()">Stay in the loop</a></div>' +
+            '<div class="fleftnav-link"><a ng-href={{promoLink}}>Special offers</a></div>' +
         '</div>' +
         '<div id="frightnav">' +
             '<a href="https://www.instagram.com/outdooradventurecrew/"><img src={{instagramImg}}></a>' +

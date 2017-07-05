@@ -59,11 +59,11 @@ hr {
     margin: 2% 0;
 }
 
-#about-us-bg {
+.about-us-bg {
     width: 100%;
 }
 
-#about-us {
+.about-us {
 
     margin: 6em auto 3em auto;
     width: 85%;
@@ -86,11 +86,13 @@ hr {
 }
 
 .p-opensans {
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     margin-bottom: 1em;
 }
 
 .p-opensans-big {
+    font-family: 'Open Sans', sans-serif;
     font-size: 21px;
     word-wrap: break-word;
 }
