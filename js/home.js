@@ -111,7 +111,7 @@ app.directive('footerCustom', function($compile) {
         '</div>' +
         '</div>' +
         '<hr style="margin-top:12em">' +
-        '<div class="col-sm-12 text-center" id="copyright">Copyright &copy 2016 | Outdoor Adventure Crew | this site developed and maintained by Adam Thompson' +
+        '<div class="col-sm-12 text-center" id="copyright">Copyright &copy 2016 | Outdoor Adventure Crew | this site developed and maintained by <a style="color:#515854;" href="https://adamcthompson.com">Adam Thompson</a>' +
         '</div>' +
         '</footer>'
    }
